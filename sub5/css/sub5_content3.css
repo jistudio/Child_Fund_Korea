@@ -1,0 +1,95 @@
+/* side menu current */
+.subconL .sideBar li a.current {
+	background:url(../common/images/side_magazineOver.jpg) no-repeat;
+}
+#subconR h2 a {
+	display:block;
+	width:350px;
+	height:40px;
+	background:url(../images/content3/sub5_3content_title.jpg) no-repeat;
+	text-indent:-9999px;
+	margin-bottom:50px;
+}
+#subconR .bread {
+	position:absolute;
+	top:30px;
+	right:50px;
+}
+/* news lists */
+
+#subconR .magazineList {
+	border-top:3px solid #666;
+	border-bottom:1px solid #CCC;
+	margin-top:10px;
+	width:670px;
+	padding:50px 0;
+	
+}
+#subconR .bookline1{
+	
+	overflow:hidden;
+	margin-bottom:50px;}
+	
+#subconR .bookline2{
+	
+	overflow:hidden;
+	padding-top:50px;
+
+	border-top:1px solid #f1f1f1;
+	}
+#subconR .magazineList li  {
+	float:left;
+	margin-right:71px;
+}
+#subconR .magazineList .lastRight{
+	
+	
+	margin-right:0;
+	}
+
+#subconR .magazineList li a {
+	width:173px;
+	height:244px;
+	
+}
+#subconR .magazineList p{
+font-size:12px;
+margin:10px 0;
+}
+#subconR .magazineList .viewWeb {
+	width:86px;
+	height:25px;
+	text-indent:-9999px;
+	background:url(../images/content3/viewWeb.jpg) no-repeat;
+	border:none;
+	cursor:pointer;
+}
+
+#subconR .magazineList .downloadBook {
+	
+	width:86px;
+	height:25px;
+	text-indent:-9999px;
+	background:url(../images/content3/downloadBook.jpg) no-repeat;
+	border:none;
+	cursor:pointer;
+}
+
+
+/* pagenation */
+
+
+#subconR .pagenation ul {
+	width:278px;
+	margin:30px auto;
+}
+#subconR .pagenation a {
+	display:block;
+	width:26px;
+	height:26px;
+	float:left;
+	margin-right:10px;
+}
+#subconR .pagenation a.lastPage {
+	margin-right:0px;
+}

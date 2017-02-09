@@ -1,0 +1,39 @@
+/* CSS Document */
+
+
+.subconL h3{
+	text-indent:-9999px;
+	width:210px;
+	height:105px;
+	background:url(../images/side_donation.jpg) no-repeat;
+	}
+.subconL .sideBar li a{
+	display:block;
+	text-indent:-9999px;
+	width:210px;
+	height:51px;
+}
+.subconL .sideBar .sideDonationHow{
+	background:url(../images/side_donationHow.jpg)no-repeat;
+	
+	}
+.subconL .sideBar .sideDonationMonth{
+	background:url(../images/side_donationMonth.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideDonationOnce{
+	background:url(../images/side_donationOnce.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideDonationHow:hover{
+	background:url(../images/side_donationHowOver.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideDonationMonth:hover{
+	background:url(../images/side_donationMonthOver.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideDonationOnce:hover{
+	background:url(../images/side_donationOnceOver.jpg) no-repeat;
+	
+	}

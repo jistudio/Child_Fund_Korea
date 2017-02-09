@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>어린이재단::일시후원</title>
+	<link href="../common/css/common.css" rel="stylesheet" type="text/css" />
+	<link href="../common/css/sublayout.css" rel="stylesheet" type="text/css" />
+	<link href="common/css/sub3common.css" rel="stylesheet" type="text/css" />
+	<link href="css/sub3_content3.css" rel="stylesheet" type="text/css" />
+	<link href="../common/css/select.css" rel="stylesheet" type="text/css" />
+	<script language="javascript" src="../common/js/centerpopup.js" type="text/javascript"></script>
+	<script language="javascript" src="../common/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+	<script language="javascript" src="../common/js/fullnav.js" type="text/javascript"></script>
+	<script language="javascript" src="../common/js/select.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../common/js/move-top.js"></script>
+	<script type="text/javascript" src="../common/js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+			
+			var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'easeOutElastic' 
+		 		};
+				$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	</head>
+
+	<body >
+<? include "../common/head.html" ?>
+<div class="subContainer">
+		<div class="subVisual"><img src="common/images/sub3mainVisual.jpg" alt="서브 페이지3 메인 비주얼"></div>
+		<div class="subcontentWrap">
+		<div class="subconL">
+				<h3>후원하기</h3>
+				<ul class="sideBar">
+				<li class="sideDonationHow"><a  href="sub3_1.html">후원하기 안내</a></li>
+				<li class="sideDonationMonth"><a  href="sub3_2.html">정기후원</a></li>
+				<li class="sideDonationOnce"><a class="current" href="sub3_3.html">일시후원</a></li>
+			</ul>
+				<div class="sideAd1"><a href="#"><img src="common/images/sideAd1.jpg" alt="문자 후원하기"></a></div>
+				<div class="sideAd2"><a href="#"><img src="common/images/sideAd2.jpg" alt="ARS 후원하기"></a></div>
+				<ul class="quickLink">
+				<li><a  href="#"><img src="common/images/quick_call.jpg" alt="연락처"></a></li>
+				<li><a  href="#"><img src="common/images/quick_map.jpg" alt="지도보기"></a></li>
+				<li class="quickLast"><a  href="#"><img src="common/images/quick_guide.jpg" alt="후원자 가이드"></a></li>
+			</ul>
+			</div>
+		<div id="subconR">
+				<h2><a href="#0">일시후원</a></h2>
+				<div class="bread"><img src="images/content3/sub3_3bread.jpg" alt="home  >  후원하기  >  일시후원"/></div>
+				<div id="form1">
+				<form action="" method="post">
+						<div class="aboutHow">
+						<h3><span>⊙</span> &nbsp; 초록우산의 후원방법을 선택해주세요.</h3>
+						<table class="howToDonate" summary="후원분야, 후원프로그램, 후원금액, 결재방법을 입력하는 테이블 입니다.">
+								<caption class="hidden">
+							후원방법선택
+							</caption>
+								<colgroup>
+							<col width="20%" />
+							<col width="*" />
+							</colgroup>
+								<tbody>
+								<tr><!-- 웬만하면 id, name, for 값을 같게 한다-->
+										<th scope="row"><label for="area_radioset">후원분야</label></th>
+										<td>
+										<input type="radio" checked="checked" id="domestic" name="area_radioset1" 
+                    value = ""  />
+										<label for="domestic">국내</label>
+										&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										
+										<input type="radio" id="international" name="area_radioset1"  
+                   value=""  />
+										<label for="international">해외</label>
+										</td>
+									</tr>
+								<tr>
+										<th scope="row"><label for="donate_checkset">후원프로그램</label></th>
+										<td>
+										
+										
+										
+										
+										
+										<input type="checkbox"  id="donate_check2" 
+                 name="checkset" value = "" />
+										<label for="donate_check2">통일빵</label>
+										&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										<input type="checkbox"  id="donate_check3" name="donate_checkset" 
+                 value = ""  />
+										<label for="donate_check3">아동지원기금</label>
+										&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										<input type="checkbox"  id="donate_check4" name="donate_checkset" 
+                 value = ""  />
+										<label for="donate_check4">나눔 SOS</label>
+										&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+									</tr>
+									
+									<tr >
+									
+										<th scope="row"><label for="howMuch">후원금액</label></th>
+										<td><input type="text" id="howMuch" name="howMuch"
+                  size="30"  maxlength="30"  /> 원 납입형태 매월 25일</td>
+									
+									
+									
+										
+									</tr>
+									
+									<tr >
+									
+										<th scope="row"><label for="whatBank">후원은행</label></th>
+										<td><input type="text" id="whatBank" name="whatBank"
+                  size="30"  maxlength="30"  /> </td>
+									
+									
+									
+										
+									</tr>
+													<tr >
+									
+										<th scope="row"><label for="whatNum">출금계좌번호</label></th>
+										<td><input type="text" id="whatNum" name="whatNum"
+                  size="30"  maxlength="30"  /> </td>
+									
+									
+									
+										
+									</tr>
+									
+									<tr >
+									
+										<th scope="row"><label for="whatName">예금주명</label></th>
+										<td><input type="text" id="whatName" name="whatName"
+                  size="30"  maxlength="30"  /> </td>
+									
+									
+									
+										
+									</tr>
+								<tbody>
+								</table>
+								</div>
+									
+									
+				
+				
+				
+				
+				
+				
+						<div class="aboutWho">
+						<h3><span>⊙</span> &nbsp; 후원인 정보를 입력해주세요.</h3>
+						<table class="whoDonate" summary="후원인 유형별 정보, 후원동기, 수신 동의 등을 입력하고 개인정보 처리방침 및 후원약관에 동의하는 테이블 입니다.">
+								<caption class="hidden">
+							후원인 정보 입력
+							</caption>
+								<colgroup>
+							<col width="20%" />
+							<col width="*" />
+							</colgroup>
+								<tbody>
+								<tr><!-- 웬만하면 id, name, for 값을 같게 한다-->
+										<th scope="row"><label for="radioset">후원인 구분</label></th>
+										<td><input type="radio" checked="checked" id="radio1" name="radioset1" 
+                    value = ""  />
+										<label for="radio1">개인</label>
+										&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										<input type="radio" id="radio2" name="radioset1"  
+                   value=""  />
+										<label for="radio2">법인</label>
+										&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										<input type="radio" id="radio3" name="radioset1"  
+                   value=""  />
+										<label for="radio3">학교및 단체</label></td>
+									</tr>
+								<tr >
+										<th scope="row"><label for="my_name">이름</label></th>
+										<td><input type="text" id="my_name" name="my_name"
+                  size="30"  maxlength="30"  /></td>
+									</tr>
+								<tr>
+										<th scope="row"><label for="juminNumer">주민 번호</label></th>
+										<td><label class="hidden" for="jumin1">주민번호 앞자리 6자</label>
+										<input type="text" id="jumin1" name="jumin1" 
+                   maxlength="6" />
+										-
+										<label  class="hidden" for="jumin2">주민번호 뒷자리 7자</label>
+										<input type="password" id="jumin2" name="jumin2" 
+                   maxlength="7" />
+										<input type="hidden" id="juminNumer" name="juminNumer" /></td>
+									</tr>
+								<tr>
+										<th scope="row"><label for="cellNumer1">핸드폰번호</label></th>
+										<td><label class="hidden" for="cellNumer1">핸드폰 앞자리 3자</label>
+										<input type="text" id="cellNumer1" name="cellNumer1" 
+                  size="10" maxlength="3" />
+										-
+										<label  class="hidden" for="cellNumer2">핸드폰 가운데자리 3자</label>
+										<input type="text" id="cellNumer2" name="cellNumer2" 
+                  size="10" maxlength="3" />
+										-
+										<label  class="hidden" for="cellNumer3">핸드폰 뒷자리 4자</label>
+										<input type="text" id="cellNumer3" name="cellNumer3" 
+                  size="10" maxlength="4" /></td>
+									</tr>
+								<tr>
+										<th scope="row"><label for="email1">이메일</label></th>
+										<td><label class="hidden" for="email1">이메일 앞자리</label>
+										<input type="text" id="email1" name="email1" 
+                   maxlength="20" />
+										@
+										<label  class="hidden" for="email2">이메일 뒷자리</label>
+										<input type="text" id="email2" name="email2" 
+                   maxlength="20" />
+										<select id="email_choice" name="email_choice">
+												<option value="">직접입력</option>
+												<option value="">naver.com</option>
+												<option value="">nate.com</option>
+												<option value="">hotmail.com</option>
+												<option value="">korea.com</option>
+												<option value="">google.com</option>
+												<option value="">yahoo.com</option>
+												<option value="">hanmail.net</option>
+											</select></td>
+									</tr>
+								<tr >
+										<th scope="row"><label for="zipcode">우편번호</label></th>
+										<td><input type="text" id="zipcode" name="zipcode"
+                 size="10"   maxlength="5"  />
+										-
+										<input type="text" id="zipcode2" name="zipcode2"
+                 size="10"   maxlength="5"  /></td>
+									</tr>
+								<tr >
+										<th scope="row"><label for="my_add">상세주소</label></th>
+										<td><input type="text" id="my_add" name="my_add"
+                 size="70"    maxlength="30"  /></td>
+									</tr>
+								<tr >
+										<th scope="row"><label for="why_donate">후원동기</label></th>
+										<td><select id="why_donate" name="why_donate">
+												<option value="">인터넷</option>
+												<option value="">TV</option>
+												<option value="">라디오</option>
+												<option value="">우편물</option>
+												<option value="">주변권유</option>
+											</select></td>
+									</tr>
+								<tr>
+										<th scope="row"><label for="checkset">수신동의</label></th>
+										<td><input type="checkbox" checked="checked" id="check1" name="checkset" 
+                  value = "" />
+										<label for="check1">소식지</label>
+										&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										<input type="checkbox"  id="check2" 
+                 name="checkset" value = "" />
+										<label for="check2">연말정산영수증</label>
+										&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										<input type="checkbox"  id="check3" name="checkset" 
+                 value = ""  />
+										<label for="check3">문자메세지</label>
+										&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										<input type="checkbox"  id="check4" name="checkset" 
+                 value = ""  />
+										<label for="check4">뉴스레터</label>
+										 </td>
+									</tr>
+								<tr >
+										<th scope="row"><label for="my_info_deal">개인정보처리방침</label></th>
+										<td><div class="agreeArea">
+												<h4>1. 수집하는 개인정보 항목 및 수집방법</h4>
+												<p>￭ 수집항목<br />
+												재단은 회원가입, 원활한 고객상담, 후원신청, 각종 서비스 등 기본적인 서비스 제공을 위한 필수정보와 고객 맞춤 서비스 제공을 위한 선택정보로 구분하여 아래와 같은 개인정보를 수집하고 있습니다.<br />
+												<만 14세 이상 회원가입 시>
+												<br />
+												- 필수항목 : 이름, 주민등록번호, 회원아이디, 비밀번호, 이메일 주소, 전화번호(유선,휴대폰,회사 중 1개 선택), 주소, 우편물 수령지 주소, 직업<br />
+												- 선택항목 : 전화번호(유선,휴대폰,회사 중 선택항목 이외 나머지), 팩스번호, 직장 및 학교명, 생년월일, 결혼기념일, 추천인 아이디<br />
+												<만 14세 미만 회원가입 시>
+												<br />
+												- 필수항목 : 이름, 주민등록번호, 회원아이디, 비밀번호, 이메일 주소, 전화번호(유선,휴대폰 중 1개 선택), 주소, 우편물 수령지 주소, 직업<br />
+												- 선택항목 : 전화번호(유선,휴대폰,회사 중 선택항목 이외 나머지), 생년월일, 추천인 아이디<br />
+												<기업 회원가입 시>
+												<br />
+												- 필수항목 : 기업명, 사업자번호, 회원아이디, 비밀번호, 이메일 주소, 전화번호(유선,휴대폰,회사 중 1개 선택), 주소, 직종<br />
+												- 선택항목 : 전화번호(유선,휴대폰,회사 중 선택항목 이외 나머지), 추천인 아이디<br />
+												<외국인 회원가입 시>
+												<br />
+												- 필수항목 : 외국인등록번호, 여권번호, 회원아이디, 비밀번호, 이메일 주소, 전화번호(유선,휴대폰,회사 중 1개 선택),주소, 직업<br />
+												- 선택항목 : 전화번호(유선,휴대폰,회사 중 선택항목 이외 나머지), 생년월일, 추천인 아이디<br />
+												<후원 신청 시>
+												<br />
+												- 신용카드 결제 시 : 카드사명, 카드번호, 유효일자 등<br />
+												- 자동이체 시 : 은행명, 예금주, 계좌번호, 예금주주민번호, 출금일 등<br />
+												또한, 서비스 이용과정이나 사업처리 과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.<br />
+												- IP Address, 쿠키, 방문일시, 서비스 이용 기록, 불량 이용 기록<br />
+												￭ 개인정보 수집방법
+												홈페이지 회원가입, 서면양식, 전화/팩스, 회원정보수정, 고객센터문의, 서비스이용</p>
+												<h4>2. 개인정보의 수집 및 이용목적</h4>
+												<p>재단은 수집한 개인정보를 다음의 목적을 위해 활용합니다<br />
+												￭ 회원관리<br />
+												본인확인식별, 기부 등 참여내역 및 회원정보 관리, 가입 및 탈퇴 의사 확인, 불량회원 부정 이용방지, 불만처리 등 민원 처리, 고지사항 전달<br />
+												￭ 후원 서비스 제공 및 관리<br />
+												후원금 출금, 기부금영수증발행, 후원내역관리, 후원금 사용보고 및 행사참여 등의 안내 서비스, 회원공지 및 뉴스레터, 콘텐츠 제공<br />
+												￭ 신규 서비스 제공 및 마케팅 활용<br />
+												신규 서비스 개발 및 맞춤 서비스 제공, 통계학적 특성에 따른 서비스 제공 및 광고 게재, 서비스의 유효성 확인, 이벤트 및 광고성 정보 제공 및 참여기회 제공, 접속빈도 파악, 회원의 서비스이용에 대한 통계</p>
+												<h4>3. 개인정보 공유 및 제공</h4>
+												<p>재단은 회원의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.<br />
+												￭ 재단의 요청에 따라 이용자들이 사전에 동의한 경우<br />
+												￭ 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우<br />
+												4. 개인정보의 취급위탁<br />
+												재단은 안정적인 회원 서비스를 위해 아래와 같이 외부 전문업체에 위탁하여 운영하고 있습니다.<br />
+												￭ 덕성기획(주)<br />
+												- 관련업무 : 우편물 출력 및 발송대행, 반송우편물처리, 택배발송<br />
+												- 개인정보항목 : 성명, 주소, 연락처, 기부금 결제정보<br />
+												￭ 넷퍼시(주)<br />
+												- 관련업무 : 뉴스레터 등 대량 이메일, SMS 발송<br />
+												- 개인정보항목 : 성명, 연락처, 이메일</p>
+												<h4>5. 개인정보의 보유 및 이용기간</h4>
+												<p>재단은 회원이 탈퇴를 요청하거나 제공한 개인정보의 수집 및 이용에 대한 동의를 철회하는 경우, 또는 수집 및 이용목적이 달성되거나 보유 및 이용기간이 종료한 경우 해당 이용자의 개인정보는 지체 없이 파기 됩니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.<br />
+												￭ 재단 내부 방침에 의한 정보보유 사유<br />
+												- 보존 이유 : 부정 이용 방지<br />
+												- 보존 기간 : 1개월<br />
+												￭ 관련법령에 의한 정보보유 사유<br />
+												상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 재단은 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다. 이 경우 재단은 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.<br />
+												<계약 또는 후원 철회 등에 관한 기록>
+												<br />
+												- 보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률<br />
+												- 보존 기간 : 5년<br />
+												<전자금융 거래에 관한 기록>
+												<br />
+												- 보존 이유 : 전자금융거래법<br />
+												- 보존 기간 : 5년<br />
+												<소비자의 불만 또는 분쟁처리에 관한 기록>
+												<br />
+												- 보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률<br />
+												- 보존 기간 : 3년</p>
+												<h4>6. 개인정보의 파기절차 및 방법</h4>
+												<p>￭ 파기절차<br />
+												회원의 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기됩니다.<br />
+												별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유 이외의 다른 목적으로 이용되지 않습니다.<br />
+												￭ 파기방법<br />
+												파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다. <br />
+												종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.</p>
+												<h4>7. 이용자 및 법정대리인의 권리와 그 행사방법</h4>
+												<p>회원 및 법정 대리인은 언제든지 등록되어 있는 자신 혹은 당해 만 14세 미만 아동의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수도 있습니다. 회원 혹은 만 14세 미만 아동의 개인정보 조회ㆍ수정을 위해서는 ‘개인정보변경’(또는 ‘회원정보수정’ 등)을, 가입해지(동의철회)를 위해서는 “회원탈퇴”를 선택하여 본인 확인 절차를 거치신 후 직접 열람, 정정 또는 탈퇴가 가능합니다. 혹은 개인정보관리책임자에게 서면, 전화 또는 이메일로 연락하시면 지체없이 조치하겠습니다. 회원께서 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체없이 통지하여 정정이 이루어지도록 하겠습니다. 재단은 회원 혹은 법정 대리인의 요청에 의해 해지 또는 삭제된 개인정보는 “5. 개인정보의 보유 및 이용기간”에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.</p>
+												<h4>8. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항</h4>
+												<p>재단은 회원의 정보를 수시로 저장하고 찾아내는 ‘쿠키(cookie)’ 등을 운용합니다. 쿠키란 재단의 웹사이트를 운영하는데 이용되는 서버가 귀하의 브라우저에 보내는 아주 작은 텍스트 파일로서 회원의 컴퓨터 하드디스크에 저장됩니다. 재단은 다음과 같은 목적을 위해 쿠키를 사용합니다.<br />
+												￭ 쿠키 등 사용 목적<br />
+												회원과 비회원의 접속 빈도나 방문 시간 등을 분석, 이용자의 취향과 관심분야를 파악 및 자취 추적, 각종 이벤트 참여 정도 및 방문 회수 파악회원께서는 쿠키 설치에 대한 선택권을 가지고 있습니다. <br />
+												따라서, 귀하는 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다.</p>
+											</div>
+										<input type="radio" checked="checked" id="radio_info" name="radio_info" 
+                    value = ""  />
+										<label for="radio_info">‘개인정보처리방침’에 동의합니다.</label></td>
+									</tr>
+								<tr>
+										<td colspan="2" align="center"><input class="btn_donate" type="submit" value="전 송"  /></td>
+									</tr>
+							</tbody>
+							</table>
+					</div>
+					</form>
+			</div>
+				
+				<!-- scroll_top_btn -->
+				<div class="topbtn"> <a href="#" id="toTop"> <span id="toTopHover"><img src="../common/images/quick_top.jpg" alt="상단으로이동" /></span></a> </div>
+			</div>
+		<!-- /subconR -->
+		
+		<div class="clearFix"></div>
+	</div>
+		<!-- /subcontentWrap --> 
+		
+	</div>
+<!-- /subContainer -->
+
+<? include "../common/foot.html" ?>
+</body>
+</html>

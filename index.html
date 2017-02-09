@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>초록우산 어린이재단 홈페이지</title>
+	<link rel="shortcut icon" type="image/x-icon"  href="favicon.ico" />
+	<link href="common/css/common.css" rel="stylesheet" type="text/css" />
+	<link href="mainCss/layout.css" rel="stylesheet" type="text/css" />
+	<link href="mainCss/move.css" rel="stylesheet" type="text/css"  media="all"/>
+	<link href="common/css/select.css" rel="stylesheet" type="text/css" />
+	
+	<script language="javascript" src="mainJs/mainpopup.js" type="text/javascript"></script><!-- popup -->
+	<script language="javascript" src="common/js/centerpopup.js" type="text/javascript"></script>
+	<script language="javascript" src="common/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+	<script language="javascript" src="common/js/fullnav.js" type="text/javascript"></script>
+
+	<script language="javascript" src="mainJs/superslide.2.1.js" type="text/javascript"></script>
+	<script language="javascript" src="mainJs/arrow.js" type="text/javascript"></script>
+	<script language="javascript" src="mainJs/arrow3.js" type="text/javascript"></script>
+	<script language="javascript" src="mainJs/tab.js" type="text/javascript"></script>
+	<script language="javascript" src="common/js/select.js" type="text/javascript"></script>
+	<script language="javascript" src="common/js/move-top.js" type="text/javascript"></script>
+	<script language="javascript" src="common/js/easing.js"  type="text/javascript"></script>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+			
+			var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'easeOutElastic' 
+		 		};
+				$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<script type="text/javascript">
+
+$(document).ready(function(){
+
+  jQuery(".slider .bd li").first().before( jQuery(".slider .bd li").last() );
+  jQuery(".slider").hover(function(){
+	 jQuery(this).find(".arrow").stop(true,true).fadeIn(500) 
+	 },function(){ 
+	 	jQuery(this).find(".arrow").fadeOut(500) });				
+	 jQuery(".slider").slide(
+	 	{ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop",autoPlay:true, vis:3,autoPage:true, trigger:"click"}
+	);
+
+});
+
+</script>
+
+	</head>
+
+	<body>
+
+<!-- tab key 점프: #아이디와 <a> link 태그를 같이써서 점프 메뉴 만드듦-->
+<div id="skipNav"> <a href="#nav">글로벌 네비게이션 바로가기</a> <a href="#mainDonation">후원하기 바로가기</a><a href="#content">본문 바로가기</a> <a href="#footer">풋터 바로가기</a></div>
+<!-- gnb dropdown-->
+
+<div id="header">
+		<div class="headerWrap">
+		<h1><a href="index.html">초록우산 어린이재단 로고</a></h1>
+		<div class="headerR">
+				<div class="topMenu">
+				
+				<ul>
+						<li class="login"><a href="#0">로그인 │</a></li>
+						<li class="register"><a href="#0">&nbsp; 회원가입 │</a></li>
+						<li class="english"><a href="#0">&nbsp; English</a></li>
+				</ul>
+			</div>
+				<div id="nav">
+				<h2 class="hidden">글로벌 내비게이션 영역</h2>
+				<ul class="dropdownmenu">
+						<li class="m1 menu">
+						<h3><a class="depth1" href="sub1/sub1_1.html">재단소개</a></h3>
+						<ul>
+								<li><a href="sub1/sub1_1.html">어린이재단은</a></li>
+								<li><a href="sub1/sub1_2.html">CEO 인사말</a></li>
+								<li><a href="sub1/sub1_3.html">재단연혁</a></li>
+								<li><a href="sub1/sub1_4.html">찾아오시는 길</a></li>
+								<li class="navImg"></li>
+								<li class="empty">&nbsp;</li>
+							</ul>
+					</li>
+						<li class="m2 menu">
+						<h3><a class="depth1" href="sub2/sub2.html">참여하기</a></h3>
+						<ul>
+								<li><a href="sub2/sub2.html">캠페인 NOW</a></li>
+								<li><a href="sub2/sub2.html#fifth">지난 캠페인</a></li>
+								<li>&nbsp;</li>
+								<li>&nbsp;</li>
+								<li class="empty">&nbsp;</li>
+							</ul>
+					</li>
+						<li class="m3 menu">
+						<h3><a class="depth1" href="sub3/sub3_1.html">후원하기</a></h3>
+						<ul>
+								<li><a href="sub3/sub3_1.html">후원하기 안내</a></li>
+								<li><a href="sub3/sub3_2.html">정기후원</a></li>
+								<li><a href="sub3/sub3_3.html">일시후원</a></li>
+								<li>&nbsp;</li>
+								<li class="empty">&nbsp;</li>
+							</ul>
+					</li>
+						<li class="m4 menu">
+						<h3><a class="depth1" href="sub4/sub4_1.html">재단활동</a></h3>
+						<ul>
+								<li><a href="sub4/sub4_1.html">국내활동</a></li>
+								<li><a href="sub4/sub4_2.html">해외활동</a></li>
+								<li><a href="sub4/sub4_3.html">초록TUBE</a></li>
+								<li>&nbsp;</li>
+								<li class="empty">&nbsp;</li>
+							</ul>
+					</li>
+						<li class="m5 menu">
+						<h3><a class="depth1" href="sub5/sub5_1.html">재단소식</a></h3>
+						<ul>
+								<li><a href="sub5/sub5_1.html">공지사항</a></li>
+								<li><a href="sub5/sub5_2.html">나눔뉴스</a></li>
+								<li><a href="sub5/sub5_3.html">소식지</a></li>
+								<li>&nbsp;</li>
+								<li class="empty">&nbsp;</li>
+							</ul>
+					</li>
+						<li class="m6 menu">
+						<h3><a class="depth1" href="sub6/sub6_1.html">후원자세상</a></h3>
+						<ul>
+								<li><a href="sub6/sub6_1.html">봉사활동</a></li>
+								<li><a href="sub6/sub6_2.html">FAQ</a></li>
+								<li>&nbsp;</li>
+								<li>&nbsp;</li>
+								<li class="empty">&nbsp;</li>
+							</ul>
+					</li>
+					</ul>
+				<div class="clearFix"></div>
+			</div>
+			</div>
+		<!-- /headerR -->
+		<div class="clearFix"></div>
+	</div>
+		<!-- /headerWrap --> 
+	</div>
+<!-- /header -->
+
+<div class="mainTop">
+		<div class="slider">
+  <div class="bd">
+    <ul>
+     <li><a  href="#0"><img src="images/1.jpg" alt="아기평화의 종 캠페인"/></a></li>  
+      <li><a  href="#0"><img src="images/2.jpg" alt="Water 4 child 캠페인"/></a></li>
+      <li><a  href="#0"><img src="images/3.jpg" alt="사랑하나 더 캠페인" /></a></li>
+    </ul>
+  </div>
+  <div class="hd">
+    <ul>
+	<li></li>
+    </ul>
+  </div>
+  <div class="pnBtn prev"> <span class="blackBg"></span> <a class="arrow" href="javascript:void(0)">왼쪽으로</a> </div>
+  <div class="pnBtn next"> <span class="blackBg"></span> <a class="arrow" href="javascript:void(0)">오른쪽으로</a> </div>
+</div>
+		
+	</div>
+<div class="mainBottom">
+		<ul id="mainDonation">
+		<!-- Image Sprite -->
+		<li class="monthDonation"><a href="sub3/sub3_2.html">정기후원</a></li>
+		<li class="oneDonation"><a href="sub3/sub3_3.html">일시후원</a></li>
+		<li class="easyDonation"><a href="sub3/sub3_1.html">간편후원</a></li>
+		<li class="companyDonation"><a href="sub3/sub3_1.html">기업후원</a></li>
+		<li class="findDonation"><a href="sub3/sub3_1.html">후원방법찾기</a></li>
+		<li class="donationCounsel"><a href="sub3/sub3_1.html">1대1후원 상담</a></li>
+	</ul>
+	</div>
+<!-- /main -->
+
+<div id="content">
+		<div class="contentAllwrap">
+		<h2 class="hidden">본문 컨텐츠 영역</h2>
+		<div class="contTop">
+				<div class="mainTopic">
+				<h3 class="hidden">핫타픽</h3>
+				<div class="gallery_box_container3">
+				<ul  class="topic1">
+						<li><a href="#"><img src="images/mainTopic5.jpg" alt="현장소식 [봉사단Dream]" /></a> </li>
+						<li class="topic_title">
+								<h4><a href="#0">현장소식 [봉사단Dream] #1</a></h4>
+								<p>듀르벨(Diourbel). 세네갈의 더위를 더욱 유명하게 하는 내륙지역입니다. 수도 다카(Dakar)에서 차로 3~4시간 가량 떨어진 이 곳은 오뉴월의 한낮도 섭씨 40도를 기본으로 넘나들어 사람들을 집으로 몰아 넣습니다. 건조하고 따가운 바람은 사람들뿐만 아니라 가축과 농작물에도...</p>
+							</li>
+					</ul>
+						<ul  class="topic2">
+						<li><a href="#"><img src="images/mainTopic4.jpg" alt="태풍 볼라벤 수해복구현장" /></a> </li>
+						<li class="topic_title">
+								<h4><a href="#0">ONE GOAL, ONE DREAM</a></h4>
+								<p>꿈을 향한 아이들의 리그가 시작된다! 쓰레기를 뭉친공, 쓰러질 듯한 나무 골대가 전부지만 아이들의 리그는 꿈을 향한 열정으로 가득합니다. 축구공만 있으면 모든 곳이 놀이터 입니다. 축구공을 찰 때마다 건강해 집니다. 가난과 질병으로 몸과 마음이 지친 어린이들도 친구들과...</p>
+							</li>
+					</ul>
+						<ul  class="topic3">
+						<li><a href="#"><img src="images/mainTopic1.jpg" alt="어린이재단, 미얀마 방문 소식" /></a> </li>
+						<li class="topic_title">
+								<h4><a href="#0">어린이재단, 미얀마 방문일기</a></h4>
+								<p>어려운 상황 속에서도 미소를 잃지 않는 미얀마의 아이들을 만나러 어린이재단이 찾아갔습니다. 어린이재단은 호주의 만달라이와 양곤지역에 있는 9개의 사업지역을 방문하였습니다. 호주는 현지의 10개 파트너 기관과 함께 사업을 진행 중에 있습니다... </p>
+							</li>
+					</ul>
+						
+					</div>
+				<span> <a href="#btn1" class="leftBtn3">왼쪽</a> <a href="#btn2" class="rightBtn3">오른쪽</a> </span>
+				<div class="viewAll1"><a href="#">전체보기</a></div>
+			</div>
+				<div class="announce">
+				<h3 class="titleAnnounce"><a href="#0">공지사항</a></h3>
+				<ul>
+						<li class="mainAnnounce1"><a href="#0">2014 연구주제 공모전 2분기 선정작에...</a></li>
+						<li class="mainAnnounce2"><a href="#0">초록툰! 후원자님의 아름다운 후원에...</a></li>
+						<li class="mainAnnounce3"><a href="#0">후원자의 정보를 최신정보로 업데이트...</a></li>
+						<li class="mainAnnounce4"><a href="#0">비용은 더 줄이고 나눔은 더 늘이고...</a></li>
+						<li class="mainAnnounce5"><a href="#0">[성명서] 아동학대 예방 및 보호업무...</a></li>
+					</ul>
+				<div class="viewAll2"><a href="#">전체보기</a></div>
+			</div>
+			</div>
+		<!-- /content top -->
+		<div class="contMiddle">
+				<div class="aboutCompany">
+			
+						<h3 class="titleCom"><a href="#0">초록우산 어린이재단 소개</a></h3>
+						<h4>어린이는 우리의 미래!</h4>
+						<p>아동 복지와 함께한 60년의 역사, 어린이
+가 혼자 그리는 그림은 꿈이지만, 어린이와
+우리가 함께 그리는 그림은 미래가 됩니다.
+어린이 재단은 어린이의 건강한 성장을 
+도우며 희망찬 미래를 열어갑니다.</p>
+						<div class="viewAll3"><a href="#">전체보기</a></div>
+					
+			</div>
+				<div class="volunteerWork">
+				
+				
+						<h3 class="titleVolunteer"><a href="#0">봉사활동 참여하기</a></h3>
+						<p>자원봉사 활동을 통해 세상의 변화를
+						이끌고,<br />
+						아름다운 가치를 창조할
+						자원봉사자<br />
+						분들을 기다립니다.</p>
+						<div class="viewAll5"><a href="#">전체보기</a></div>
+				
+			</div>
+				<div class="starSupporters">
+				<h3 class="titleStar"><a href="#0">스타 서포터즈</a></h3>
+				<p>초록우산 어린이 재단과 함께 나눔을<br />
+						실천하는 스타들은 소개합니다.</p>
+				<div class="viewAll_trans"><a href="#">전체보기</a></div>
+			</div>
+			</div>
+		<!-- /content middle -->
+		<div class="contBottom">
+				<div class="tabs">
+				<h3 class="hidden">초록우산 now, SNS통한 새소식 보기</h3>
+				<h4><a href="#0" class="tab tab1">페이스북</a></h4>
+				<div class="contlist">
+						<dl class="comment">
+						<dt><a href="https://www.facebook.com/childfundkor"><img src="images/sns1.jpg" alt="이홍렬 홍보대사님의 60초 도서" /></a></dt>
+						<dd class="sns_title"><a href="https://www.facebook.com/childfundkor">60세의 나를 상상하는 일, 행복한 시간이었기를 바라며 
+							이홍렬 홍보대사님의 &lt;60초&gt; 도서를 선물 받으실 당첨자를... </a><br />
+								<span class="sns_date">초록우산 facebook &nbsp; &Iota; &nbsp;July 30 at 4:30 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="https://www.facebook.com/childfundkor"><img src="images/sns2.jpg" alt="컨테이너 박스 등에 사는 아이들" /></a></dt>
+						<dd class="sns_title"><a href="https://www.facebook.com/childfundkor">지금 대한민국에는 집이 없어서 여인숙을 전전하거나,
+							비닐하우스, 컨테이너 박스 등에 사는 아이들,
+							장마철만 되면 집에... </a><br />
+								<span class="sns_date">초록우산 facebook  &nbsp; &Iota; &nbsp; June 05 at 3:00 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="https://www.facebook.com/childfundkor"><img src="images/sns3.jpg" alt="나는 아직 어른이 되려면 멀었다" /></a></dt>
+						<dd class="sns_title"><a href="https://www.facebook.com/childfundkor">번듯한 대학을 나와, 번듯한 직업을 가진 저자들도
+							‘나는 아직 어른이 되려면 멀었다’고, ‘천 번을 흔들려야 어른이... </a><br />
+								<span class="sns_date">초록우산 facebook  &nbsp; &Iota; &nbsp; June 04 at 1:30 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="https://www.facebook.com/childfundkor"><img src="images/sns4.jpg" alt="축구선수 손흥민 선수" /></a></dt>
+						<dd class="sns_title"><a href="https://www.facebook.com/childfundkor">생애 첫 월드컵에서의 첫 골. 
+							축구선수로 살아가는 동안 가장 영광스러웠을 순간을,
+							손흥민 선수는 “내가 첫 골을 넣은 게... </a><br />
+								<span class="sns_date">초록우산 facebook  &nbsp; &Iota; &nbsp; May 10 at 20:30 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="https://www.facebook.com/childfundkor"><img src="images/sns5.jpg" alt="베이비박스에 버려지는 유기 아동들을 위한 기금을 마련" /></a></dt>
+						<dd class="sns_title"><a href="https://www.facebook.com/childfundkor">베이비박스에 버려지는 유기 아동들을 위한 기금을 마련하기 위해, 작곡가 겸 피아니스트 이루마와 가수 이정이...</a><br />
+								<span class="sns_date">초록우산 facebook  &nbsp; &Iota; &nbsp; May 07 at 5:10 pm</span> </dd>
+					</dl>
+					</div>
+				<h4><a href="#0" class="tab tab2">트위터</a></h4>
+				<div class="contlist">
+						<dl>
+						<dt><a href="http://twitter.com/childfundkorea"><img src="images/twitter_img1.jpg" alt="올바른 동계스포츠 OX퀴즈 풀기" /></a></dt>
+						<dd class="sns_title"><a href="http://twitter.com/childfundkorea">올바른 동계스포츠 OX퀴즈 풀기’에 참여하면 어려운 환경 속에서 꿈을 키워가는 스포츠꿈나무들에게 장학금을 지원할 수 있는 이벤트 진행 중! </a><br />
+						<span class="sns_date">초록우산 twitter &nbsp; &Iota; &nbsp;Sep 06 at 1:30 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="http://twitter.com/childfundkorea"><img src="images/twitter_img2.jpg" alt=" 6.4 지방선거, 투표권이 없는 아동을 위한 복지 공약" /></a></dt>
+						<dd class="sns_title"><a href="http://twitter.com/childfundkorea">국민 5명 중 1명은 어린이입니다. 6.4 지방선거, 투표권이 없는 아동을 위한 복지 공약도 고려하여 한 표를 행사하는... </a><br />
+						<span class="sns_date">초록우산 twitter  &nbsp; &Iota; &nbsp; July 30 at 4:30 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="http://twitter.com/childfundkorea"><img src="images/twitter_img3.jpg" alt="사랑+사랑=특별한 나눔" /></a></dt>
+						<dd class="sns_title"><a href="http://twitter.com/childfundkorea">1+1은 귀요미보다 더 강력한 공식, 사랑+사랑=특별한 나눔. 소중한 사람과 함께 &lt;사랑 하나 더&gt; 하세요... </a><br />
+						<span class="sns_date">초록우산 twitter  &nbsp; &Iota; &nbsp; July 10 at 3:10 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="http://twitter.com/childfundkorea"><img src="images/twitter_img4.jpg" alt="어른의 책임" /></a></dt>
+						<dd class="sns_title"><a href="http://twitter.com/childfundkorea">[어른]의 사전적 의미 다 자란 사람. 또는 다 자라서 자기 일에 책임을 질 수 있는 사람. 아동에게 안전한 환경을 제공하는 일, 어떤 상황에서도 보호하는 일... </a><br />
+						<span class="sns_date">초록우산 twitter  &nbsp; &Iota; &nbsp; June 06 at 01:02 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="http://twitter.com/childfundkorea"><img src="images/twitter_img5.jpg" alt="광고꾼 이제석" /></a></dt>
+						<dd class="sns_title"><a href="http://twitter.com/childfundkorea">공익광고의 대가, 광고꾼 이제석님이 초록우산 어린이재단 홍보대사로 위촉되었습니다! “내가 너의 우산이 되어줄게!” 초록우산에 직접 적어오신 포부처럼...</a><br />
+						<span class="sns_date">초록우산 twitter  &nbsp; &Iota; &nbsp; May 04 at 4:00 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="http://twitter.com/childfundkorea"><img src="images/twitter_img6.jpg" alt="VIXX와 팬의 이름으로 된 후원증서" /></a></dt>
+						<dd class="sns_title"><a href="http://twitter.com/childfundkorea">VIXX에게 나눔을 선물하라! &lt;사랑 하나 더&gt;에 정기후원하면 VIXX와 팬의 이름으로 된 후원증서가!...</a><br />
+						<span class="sns_date">초록우산 twitter  &nbsp; &Iota; &nbsp; May 01 at 01:01 pm</span> </dd>
+						</dl>
+					</div>
+				<h4><a href="#0" class="tab tab3">유튜브</a></h4>
+				<div class="contlist">
+				<dl>
+						<dt><a href="http://www.youtube.com/channel/UC4wELXiuG9aKVr_mzHToCnw"><img src="images/youtube_img1.jpg" alt="축구공" /></a></dt>
+						<dd class="sns_title"><a href="http://www.youtube.com/channel/UC4wELXiuG9aKVr_mzHToCnw">꿈을 이루는 것은 어린이 자신의 몫이지만
+							마음껏 꿈꿀 수 있는 환경을 만들어주는 것은 우리의 몫입니다... </a><br />
+						<span class="sns_date">초록우산 youTube &nbsp; &Iota; &nbsp;Sep 06 at 1:30 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="http://www.youtube.com/channel/UC4wELXiuG9aKVr_mzHToCnw"><img src="images/youtube_img2.jpg" alt=" 학교에 가고 싶은 아이" /></a></dt>
+						<dd class="sns_title"><a href="http://www.youtube.com/channel/UC4wELXiuG9aKVr_mzHToCnw">학교에 가고 싶은 아이, 깨끗한 물이 필요한 아이, 아픈 곳이 없기를 바라는 아이, 우리에게는 너무나 당연한 일을 '어쩌면'이라는 작은 희망으로 품고 사는 아이들이... </a><br />
+						<span class="sns_date">초록우산 youTube  &nbsp; &Iota; &nbsp; July 30 at 4:30 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="http://www.youtube.com/channel/UC4wELXiuG9aKVr_mzHToCnw"><img src="images/youtube_img3.jpg" alt="대한민국에서 어린이" /></a></dt>
+						<dd class="sns_title"><a href="http://www.youtube.com/channel/UC4wELXiuG9aKVr_mzHToCnw">대한민국에서 어린이로 산다는 것... </a><br />
+						<span class="sns_date">초록우산 youTube  &nbsp; &Iota; &nbsp; July 10 at 3:10 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="http://www.youtube.com/channel/UC4wELXiuG9aKVr_mzHToCnw"><img src="images/youtube_img4.jpg" alt="1박 2일" /></a></dt>
+						<dd class="sns_title"><a href="http://www.youtube.com/channel/UC4wELXiuG9aKVr_mzHToCnw">어른이날이란?
+							때가 되면 당연히 되는 어른이 아닌, 어린이를 돕는 일을 해야 진정한 어른이 될 수 있다는 의미를 담고 있습니다. 이 세상의 어른이라면 누구나... </a><br />
+						<span class="sns_date">초록우산 youTube  &nbsp; &Iota; &nbsp; June 06 at 01:02 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="http://www.youtube.com/channel/UC4wELXiuG9aKVr_mzHToCnw"><img src="images/youtube_img5.jpg" alt="연예인 박보영" /></a></dt>
+						<dd class="sns_title"><a href="http://www.youtube.com/channel/UC4wELXiuG9aKVr_mzHToCnw">당신의 손 끝에서 시작된 기적이 더 좋은 세상을 만드는 시작이 됩니다. 지금, 10인의 기부천사와 함께 사랑, 하나 더!...</a><br />
+						<span class="sns_date">초록우산 youTube  &nbsp; &Iota; &nbsp; May 04 at 4:00 pm</span> </dd>
+						<dt class="sns_topSpace"><a href="http://www.youtube.com/channel/UC4wELXiuG9aKVr_mzHToCnw"><img src="images/youtube_img6.jpg" alt="가수 민경훈" /></a></dt>
+						<dd class="sns_title"><a href="http://www.youtube.com/channel/UC4wELXiuG9aKVr_mzHToCnw">염정아, 가수 민경훈, 건축가 변문수씨가 어른이 된 이유는?
+							당신만의 어른이날을 만드세요...</a><br />
+						<span class="sns_date">초록우산 youTube  &nbsp; &Iota; &nbsp; May 01 at 01:01 pm</span> </dd>
+						</dl>
+					</div>
+			</div>
+				<div class="conRight">
+				<div class="conWrap">
+						<div class="selectedStory">
+						<h3 class="titleStory"><a href="#0">나눔 스토리</a></h3>
+						<p>나눔의 감동! 초록 우산 어린이 재단과<br />
+								함께 하는 우리 이웃들의 따뜻한<br />
+								이야기를 만나보세요.</p>
+						<div class="viewAll6"><a href="#">전체보기</a></div>
+					</div>
+						<div class="quickLink">
+						<h3 class="titleQuick"><a href="#0">바로가기</a></h3>
+						<ul>
+								<li class="guide"><a href="#"><img src="images/linkGuide.jpg" alt="후원자 가이드" /></a></li>
+								<li class="counsel"><a href="#"><img src="images/linkOnline.jpg" alt="온라인 상담" /></a></li>
+								<li class="newsletter"><a href="#"><img src="images/linkLetter.jpg" alt="뉴스레터" /></a></li>
+								<li class="writing"><a href="#"><img src="images/linkWrite.jpg" alt="캠페인 후기" /></a></li>
+							</ul>
+					</div>
+					</div>
+				<div class="withCompany">
+						<h3 class="titleWithBrand"><a href="#0">초록우산과 함께하는 나눔 브랜드</a></h3>
+						<div class="gallery_box_container">
+						<ul  class="news1">
+								<li> <a href="#" title="한화 새창으로 열림" target="_blank"><img src="images/B_hanwha.jpg" alt="한화" /></a> </li>
+								<li><a href="#" title="hf 한국주택금융공사 새창으로 열림" target="_blank"><img src="images/B_hf.jpg" alt="hf 한국주택금융공사" /></a> </li>
+								<li> <a href="#" title="ibk 기업은행 새창으로 열림" target="_blank"><img src="images/B_ibk.jpg" alt="ibk 기업은행" /></a> </li>
+								<li><a href="#" title="inc 새창으로 열림" target="_blank"><img src="images/B_inc.jpg" alt="inc" /></a> </li>
+								<li class="clearFix"><a href="#" title="우리은행 새창으로 열림" target="_blank"><img src="images/B_woori.gif" alt="우리은행" /></a> </li>
+								<li><a href="#" title="스포츠 토토 새창으로 열림" target="_blank"><img src="images/B_sports.jpg" alt="스포츠 토토" /></a> </li>
+								<li> <a href="#" title="신세계 새창으로 열림" target="_blank"><img src="images/B_sin.gif" alt="신세계" /></a> </li>
+								<li> <a href="#" title="삼일 새창으로 열림" target="_blank"><img src="images/B_samil.jpg" alt="samil" /></a> </li>
+							</ul>
+						<ul class="news2">
+								<li><a href="#" title="델타 새창으로 열림" target="_blank"><img src="images/B_delta.jpg" alt="델타" /></a> </li>
+								<li> <a href="#" title="BT&amp;I 새창으로 열림" target="_blank"><img src="images/B_bti.jpg" alt="BT&amp;I" /></a> </li>
+								<li> <a href="#" title="이데일리 새창으로 열림" target="_blank"><img src="images/B_edaily.gif" alt="이데일리" /></a> </li>
+								<li > <a href="#" title="금융감독원 새창으로 열림" target="_blank"><img src="images/b_financial.jpg" alt="금융감독원" /></a> </li>
+								<li class="clearFix"> <a href="#" title="GS건설 새창으로 열림" target="_blank"><img src="images/B_gs.jpg" alt="GS건설" /></a> </li>
+								<li> <a href="#" title="HEM KOREA 새창으로 열림" target="_blank"><img src="images/B_hem.jpg" alt="HEM KOREA" /></a> </li>
+								<li> <a href="#" title="hollyshop 새창으로 열림" target="_blank"><img src="images/B_hollyshop.jpg" alt="hollyshop" /></a> </li>
+								<li> <a href="#" title="SKC 새창으로 열림" target="_blank"><img src="images/B_skc.gif" alt="SKC" /></a> </li>
+							</ul>
+						<ul  class="news3">
+								<li> <a href="#" title="lg 새창으로 열림" target="_blank"><img src="images/B_lg.jpg" alt="lg" /></a> </li>
+								<li><a href="#" title="금호 렌터카 새창으로 열림" target="_blank"><img src="images/B_rentcar.gif" alt="금호 렌터카" /></a> </li>
+								<li> <a href="#" title="oci 새창으로 열림" target="_blank"><img src="images/B_oci.jpg" alt="oci" /></a> </li>
+								<li> <a href="#" title="Mind &amp; Kind 새창으로 열림" target="_blank"><img src="images/B_mind.jpg" alt="Mind &amp; Kind" /></a> </li>
+								<li > <a href="#" title="LIG 손해보험 새창으로 열림" target="_blank"><img src="images/B_lig.gif" alt="LIG 손해보험" /></a> </li>
+								<li> <a href="#" title="한국환경공단 새창으로 열림" target="_blank"><img src="images/B_earth.jpg" alt="한국환경공단" /></a> </li>
+								<li> <a href="#" title="현대건설 새창으로 열림" target="_blank"><img src="images/B_hyundae.jpg" alt="현대건설" /></a> </li>
+								<li> <a href="#" title="현대자동차 새창으로 열림" target="_blank"> <img src="images/B_hyundaeCar.jpg" alt="현대자동차" /></a> </li>
+							</ul>
+					</div>
+						<span> <a href="#btn1" class="leftBtn">왼쪽</a> <a href="#btn2" class="RightBtn">오른쪽</a> </span>
+						<div class="viewAll7"><a href="#">전체보기</a></div>
+					</div>
+				<!-- /with company --> 
+			</div>
+				<!-- /conRight --> 
+				
+			</div>
+		<!-- /content bottom --> 
+	</div>
+		<!-- /contentAllwarp --> 
+	</div>
+<!-- /content -->
+
+<div id="footer">
+		<div class="footerWrap">
+		<h2 class="hidden">글로벌 풋터영역</h2>
+		<div class="footerLogo"><img src="common/images/footerLogo.jpg" alt="어린이재단 풋터로고" /></div>
+		<div class="footerL">
+				<ul>
+				<li><a href="#">인재채용</a></li>
+				<li><a href="#">개인정보 처리방침</a></li>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">찾아오시는 길</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">모바일 웹</a></li>
+			</ul>
+				<address>
+			초록우산 어린이재단(구 한국복지재단) │ 사업자 등록번호 202-82-55238 │ 회장 이제훈 │ 대표이사 지훈상<br />
+			[100 -170 ] 서울시 중구 무교로 20 어린이재단 빌딩 11층 │ 후원문의전화 1588-1940 │ 팩스 02-756-4256
+			</address>
+				<p>Copyright Childfund Korea. All Rights Reserved.</p>
+			</div>
+		<div class="footerR">
+				<div class="select open"> <span class="ctrl"><span class="arrow"></span></span>
+				<button type="button" class="myValue">차일드 펀드 회원기관</button>
+				<ul class="aList">
+						<li><a href="#">뉴질랜드</a></li>
+						<li><a href="#">독일</a></li>
+						<li><a href="#">대만</a></li>
+						<li><a href="#">미국</a></li>
+						<li><a href="#">덴마크</a></li>
+						<li><a href="#">스웨덴</a></li>
+						<li><a href="#">아일랜드</a></li>
+						<li><a href="#">프랑스</a></li>
+						<li><a href="#">일본</a></li>
+						<li><a href="#">캐나다</a></li>
+						<li><a href="#">호주</a></li>
+					</ul>
+			</div>
+				<div class="select2 open"> <span class="ctrl"><span class="arrow"></span></span>
+				<button type="button" class="myValue">어린이재단 사업기관</button>
+				<ul class="aList">
+						<li><a href="#">부산동부아동보호전문기관</a></li>
+						<li><a href="#">대구시아동보호전문기관</a></li>
+						<li><a href="#">광주시아동보호전문기관</a></li>
+						<li><a href="#">강원도아동보호전문기관</a></li>
+						<li><a href="#">강원동부아동보호전문기관</a></li>
+						<li><a href="#">전남아동보호전문기관</a></li>
+						<li><a href="#">제주아동보호전문기관</a></li>
+					</ul>
+			</div>
+			</div>
+	</div>
+	</div>
+<!-- /footer --> 
+
+<!-- /all wrap --> 
+
+
+
+<!-- 공지 팝업 -->
+<div id="showimage" style="z-index:99;position:absolute; left:0; top:87px; ">
+  <script language="JavaScript" type="text/javascript">
+    function closeWin(){
+       var chk = document.getElementById('Notice')
+       if ( chk.checked ) {
+             setCookie( "Notice", "done" , 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+        }
+    }
+   if ( getCookie( "Notice" ) == "done" ) {
+       hidebox();
+   }
+ </script>
+ <table  summary="공지사항 : 저작권에 대한 공지">
+    <caption><span class="hidden">공지사항</span></caption>
+		<tr> 
+	<td style=" position:absolute; right:2px; top:4px; z-index:100">
+    <a href="http://validator.kldp.org/check?uri=referer"
+      onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img
+      src="http://validator.kldp.org/w3cimgs/validate/xhtml10-blue.png" alt="Valid XHTML 1.0 Transitional" height="15" width="80" /></a>
+  </td>
+  </tr> 
+    <tr>
+      <td>
+          <img src="popup/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." />
+      </td>
+    </tr>
+	<tr>
+       <td style="height:15px;cursor:hand; position:absolute; left:40px; bottom:50px; z-index:100"><p style="font-size:13px;text-align:center;color:#fff;"><input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자" style="vertical-align:middle;"/>&nbsp; <label for="Notice">close pop-up for the day</label><a style="cursor:pointer; color:#fff;" onclick="closeWin();hidebox();return false;"> [ CLOSE ] </a></p>
+       </td>
+    </tr>
+
+   
+ </table>
+
+
+</div>
+<!-- /공지 팝업 -->
+</body>
+</html>

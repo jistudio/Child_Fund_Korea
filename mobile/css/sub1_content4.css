@@ -1,0 +1,66 @@
+
+
+#menu .firstMenu{
+	
+	
+	color:#4bb940;
+	background:url(../images/arrowR.png) no-repeat 160px center;
+	background-size:10px 14px;
+	
+
+	}
+
+
+#main h2 {
+	margin:5% 0 10% 0;
+	font-size:2em;
+	color:#333;
+	font-weight:bold;
+}
+
+#map_canvas{
+	width:100%;
+	margin-bottom:5%;
+	height:250px;
+	
+	}
+#main .bar {
+	color:#4bb940;
+	letter-spacing:-13px;
+}
+#main .m_cont .map {
+	display:block;
+	text-align:center;
+}
+#main table {
+	border-top:1px solid #f1f1f1;
+}
+
+#main table th {
+	width:20%;
+	
+	text-align:left;
+	border-bottom:1px solid #f1f1f1;
+	color:#333;
+	padding:15px 0;
+	
+	
+	
+}
+#main table td {
+
+	border-bottom:1px solid #f1f1f1;
+	padding:15px 0;
+	width:60%;
+	margin-left:20%;
+	
+}
+#main .btn_tel, #main .btn_email {
+	border:none;
+	color:#4bb940;
+	text-align:center;
+	
+	float:right;
+	
+	
+}

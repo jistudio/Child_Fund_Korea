@@ -1,0 +1,40 @@
+/* side menu current */
+.subconL .sideBar li a.current{background:url(../common/images/side_mapOver.jpg) no-repeat;} 
+
+#subconR {
+	position:relative;
+	}
+#subconR h2 a{
+	display:block;
+	width:260px;
+	height:38px;
+	background:url(../images/content4/sub1_4content_title.jpg) no-repeat;
+	text-indent:-9999px;
+	
+	
+	}
+#subconR .bread3{
+	position:absolute;
+	top:30px;
+	right:50px;
+	
+	}
+#subconR #map_canvas{
+	width:660px;
+	height:330px;
+	
+	margin-top:50px;
+	margin-bottom:40px;
+	
+	}
+#subconR .public, #subconR .wayTo{
+	margin:30px 0;
+	}
+#subconR .public p, #subconR .wayTo p{
+	margin-top:10px;
+	line-height:2em;
+	}
+	
+	
+
+	

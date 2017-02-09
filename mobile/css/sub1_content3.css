@@ -1,0 +1,129 @@
+
+
+#menu .firstMenu{
+	
+	
+	color:#4bb940;
+	background:url(../images/arrowR.png) no-repeat 160px center;
+	background-size:10px 14px;
+	
+
+	}
+
+#main h2 {
+	margin:5% 0 10% 0;
+	font-size:2em;
+	color:#333;
+	font-weight:bold;
+}
+#main .historyTop{
+	background:#4bb940;
+	
+	padding:7.25% 5%;
+	margin-top:5%;
+	
+	
+	}
+#main h3 {
+	font-size:1.5em;
+	color:#fff;
+	
+	margin-bottom:5%;
+	line-height:1.5em;
+	text-align:justify;
+	text-align:center;
+}
+#main p {
+	font-size:1em;
+	text-align:justify;
+	line-height:1.5em;
+	color:#fff;
+	width:99.99%;
+	
+}
+
+#main .slideMenu ul {
+	overflow:hidden;
+	margin-bottom:5%;
+	width:100%;
+	background:#f1f1f1;
+	
+}
+#main .slideMenu ul li{
+
+}
+
+
+#main .slideMenu ul li a{
+	display:block;
+	float:left;
+	width:33.3333%;
+	height:50px;
+	background:#f1f1f1;
+	color:#4bb940;
+
+	text-align:center;
+	letter-spacing:0.005em;
+	font-size:16px;
+	font-weight:bold;
+	line-height:50px;
+	border-bottom:1px solid #4bb940;
+	
+	
+
+}
+#main .historyBox p {
+	
+	color:#666;
+	width:99.99%;
+	margin-bottom:5%;
+	
+}
+
+#main .historyBox img {
+	
+	width:100%;
+	vertical-align:top;
+	
+	margin-top:5%;
+	
+}
+
+#history1, #history2, #history3, #history4, #history5, #history6{
+	
+
+	padding:5% 0;
+	overflow:hidden;
+	
+	
+	}
+#main .historyBox h4{
+	color:#4bb940;
+	font-size:1.85em;
+	
+
+	
+	
+	
+	
+	}
+
+#main .historyBox h5{
+	color:#333;
+	
+	margin:3px 0;
+	font-weight:bold;
+	line-height:1.5em;
+	
+	}
+
+#main .historyBox .pe-7f-clock{
+	display:inline-block;
+	
+	
+	vertical-align:middle;
+	padding-bottom:5px;
+	font-size:1.25em;
+	
+	
+	}

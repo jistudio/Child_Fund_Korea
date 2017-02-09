@@ -1,0 +1,216 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link href="images/app_icon.png" rel="apple-touch-icon-precomposed"  />
+  <link href="images/startup.png" rel="apple-touch-startup-image"/>
+  <link href="css/common.css" rel="stylesheet" type="text/css" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/jquery.mmenu.css"  rel="stylesheet" type="text/css"/>
+  <link  href="css/flexslider.css" type="text/css" media="screen" rel="stylesheet"/>
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js" language="javascript"></script>
+  <!--  아이폰에서 refresh할때 스트롤탑   -->
+  <script>
+// <![CDATA[
+try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+ // ]]>
+</script>
+  <!--  올라가는 notice  -->
+  <script src="js/notice.js" language="javascript"></script>
+
+  <!--  서치박스 클릭하면 나옴  -->
+  <script type="text/javascript"> 
+
+  $(document).ready(function() {
+
+   $("#btn1").toggle(function() {
+
+    $("#searchBox").css("display","block");
+
+   }, function() {
+
+    $("#searchBox").css("display","none");
+
+   });
+
+  });
+
+ </script>
+  <!--  side slide in hamburger menu   -->
+  <script type="text/javascript" src="js/jquery.mmenu.js" language="javascript"></script>
+  <script type="text/javascript">
+  $(function(){
+    $('nav#menu').mmenu();			
+  });
+</script>
+
+  <!--  후원하기박스 터치 슬라이더   -->
+  <script type="text/javascript" src="js/jquery.event.drag-1.5.min.js"></script>
+  <script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+  <script type="text/javascript"> 
+$(document).ready(function() {
+	$("#touchSlider").touchSlider({
+		roll : false, 
+		flexible : true,
+		view : 4
+	});
+});
+</script>
+  <!--  메인비쥬얼 슬라이더   -->
+  <script src="js/move.js"></script>
+  <script defer src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
+  </script>
+  <!--  익스 html5 지원코드   -->
+  <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+  <!--  익스 css3 지원코드   -->
+  <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+  <title>초록우산 어린이재단</title>
+  </head>
+  <body>
+<div id="page">
+	<header>
+		<div id="header">
+			<div id="wrap_head">
+				<div id="side_Nav"><a href="#menu" id="sideLeft_menu" class="nav-toggle"></a>
+					<nav id="menu">
+						<ul>
+							<li class="Menu0"><a class="askDonation" href="#"><img src="images/askDonation.png" alt="희망의 빛을 선물하세요!" style="width:100%;"/></a></li>
+							<li class="firstMenu"><a href="sub1_1.html">재단소개</a></li>
+							<li ><a href="sub1_1.html">참여하기</a></li>
+							<li ><a href="sub1_1.html">후원하기</a></li>
+							<li ><a href="sub1_1.html">재단활동</a></li>
+							<li ><a href="sub1_1.html">재단소식</a></li>
+							
+						</ul>
+					</nav>
+				</div>
+				<div id="logo">
+					<h1><a href="index.html">어린이재단 로고</a></h1>
+				</div>
+				<a href="#" id="btn1"><span class="search_icon">검색</span></a>
+				<div id="searchBox">
+					<form id="search" action="#" method="get">
+						<fieldset>
+							<legend>검색</legend>
+							<div class="bg_search">
+								<div class="wrapBox">
+									<input type="text" name="input_search" class="type_text" title="검색" maxlength="255">
+								</div>
+								
+								<!--wrapBox end-->
+								
+								<input type="submit" id="Btn" class="type_btn" title="∞Àªˆ">
+							</div>
+							
+							<!--bg_search end-->
+							
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			
+			<!--wrap_head e--> 
+		</div>
+	</header>
+	<article>
+		<div id="content"> 
+			<!-- 메인 겔러리 삽입부분 -->
+			<h2 class="hidden">메인이미지갤러리</h2>
+			<div class="flexslider">
+				<ul class="slides">
+					<li><a href="#0"><img src="images/a1.jpg" alt="아기평화의 종 캠페인" /></a></li>
+					<li><a href="#0"><img src="images/a2.jpg" alt="사랑하나 더 캠페인"/></a></li>
+					<li><a href="#0"><img src="images/a3.jpg" alt="water 4 child 캠페인"/></a></li>
+				</ul>
+			</div>
+			<div id="touchSlider">
+				<ul>
+					<li class="donationbar1" ><a href="#">정기후원</a></li>
+					<li class="donationbar2" ><a href="#">일시후원</a></li>
+					<li class="donationbar3"><a href="#">간편후원</a></li>
+					<li class="donationbar4"><a href="#">기업후원</a></li>
+					<li class="donationbar5"><a href="#">후원가이드</a></li>
+					<li class="donationbar6"><a href="#">전화상담</a></li>
+					<li class="donationbar7"><a href="#">온라인상담</a></li>
+					<li class="donationbar8"><a href="#">뉴스레터</a></li>
+				</ul>
+			</div>
+			
+			<!-- 공지사항 추가 -->
+			<section>
+				<div class="notice_con">
+					<h2><img class="speaker" src="images/speaker.png"  width="21" height="14" alt="speaker"/>&nbsp;공지&nbsp;</h2>
+					<div class="slide_box">
+						<div class="slide">
+							<ul>
+								<li><a href="#">2014 연구주제 공모전 2분기 선정</a></li>
+								<li><a href="#">초록툰! 후원자님의 아름다운 후원</a></li>
+								<li><a href="#">후원자정보를 최신정보로 업데이트</a></li>
+								<li><a href="#">비용은 더 줄이고 나눔은 늘이고</a></li>
+								<li><a href="#">[성명서]아동학대 예방및 보호업무</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="news">
+				<h2 class="hidden">초록우산 뉴스</h2>
+				<ul>
+					<li><a href="#0"><img src="images/news1_x2.png" alt="봉사단 소식" style="width:100%" /><span class="txt">이달의 현장소식<br />
+						[봉사단 Dream]</span></a></li>
+					<li><a href="#0"><img src="images/news2_x2.png" alt="봉사단 소식" style="width:100%" /><span class="txt">어린이재단<br />
+						미얀마 방문일기</span></a></li>
+					<li class="lastNews"><a href="#0"><img src="images/news3_x2.png" alt="봉사단 소식" style="width:100%" /><span class="txt">초록우산 남수단<br>
+						어린이 돕기</span></a></li>
+				</ul>
+			</div>
+			<div class="bannerPart">
+				<h2 class="hidden">퀵배너</h2>
+				<ul>
+					<li><a href="#0"><img src="images/about_x2.PNG" alt="about" style="width:100%;" /></a></li>
+					<li><a href="#0"><img src="images/volunteer_x2.png" alt="봉사활동" style="width:100%" /></a></li>
+					<li class="lastBanner"><a href="#0"><img src="images/star_x2.png" alt="스타 서포터즈" style="width:100%" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</article>
+	<footer>
+		<div id="footer">
+			<input type="button"  value="로그인">
+			<input type="button"  value="PC버전">
+			<input type="button"  value="SNS">
+			<input type="button"  value="전체보기">
+			<p class="privacy"><a href="#">개인정보취급방침</a><span class="bar">|</span><a href="#">이용약관</a><span class="bar">|</span><a href="#">인재채용</a></p>
+			<div class="footerCopy">
+				<p class="copyrights LondonFont">&copy; 2014 Childfund Korea</p>
+			</div>
+			<div class="top"><a href="javascript:window.scrollTo(0,0);"><img src="images/quick_top.png"  alt="상단으로 이동" width="40" height="40"/></a></div>
+		</div>
+	</footer>
+</div>
+<!-- /page   -->
+
+</body>
+</html>

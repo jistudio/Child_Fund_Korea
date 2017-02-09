@@ -1,0 +1,31 @@
+/* CSS Document */
+
+
+.subconL h3{
+	text-indent:-9999px;
+	width:210px;
+	height:105px;
+	background:url(../images/side_volunteerWorld.jpg) no-repeat;
+	}
+.subconL .sideBar li a{
+	display:block;
+	text-indent:-9999px;
+	width:210px;
+	height:51px;
+}
+.subconL .sideBar .sideVolunteer{
+	background:url(../images/side_volunteer.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideVolunteer:hover{
+	background:url(../images/side_volunteerOver.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideFaq{
+	background:url(../images/side_faq.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideFaq:hover{
+	background:url(../images/side_faqOver.jpg) no-repeat;
+	
+	}

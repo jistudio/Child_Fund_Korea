@@ -1,0 +1,449 @@
+1) html5 + css3 + jquery
+2) html5 + css3 + jquery + jquery mobile
+
+
+1. 스마트폰 구분 방법
+   ex)
+       var smartPhones = [
+            'iphone', 'ipod',
+            'windows ce',
+            'android', 'blackberry',
+            'nokia', 'webos',
+            'opera mini', 'sonyerricsson',
+            'opera mobi', 'iemobile'
+        ];
+
+        for (var i in smartPhones) {
+            // 스마트폰 확인
+            if (navigator.userAgent.toLowerCase().match(new RegExp(smartPhones[i]))) {
+                //alert('This is Smart Phone..!');
+                document.location = 'http://m.hanb.com';
+            }
+        }
+
+2. viewport meta 태그
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no," />
+
+         *width=device-width   => 각 디바이스의 해상도에 맞춰서 보일 수 있도록 설정
+          initial-scale=1.0        => 페이지가 보이는 기본 비율(아이폰은 스케일이 1이면 가로 320px에 맞춰진다.)
+          maximum-scale=1.0   => 페이지가 보이는 최대 비율
+          minimum-scale=1.0    => 페이지가 보이는 최소 비율
+          user-scalable=no      => 사용자가 디바이스에서 확대 가능 여부
+
+3. 주소 입력창 없애는 방법
+
+   <meta name="apple-mobile-web-app-capable" content="yes" />
+   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+   <script type="text/javascript" language = "javascript"> 
+         window.addEventListener('load', function() {
+              setTimeout(scrollTo, 0, 0, 1);
+         }, false);
+   </script>
+
+4. 아이폰/아이패드 => 바로가기 아이콘(114*114)/로딩 이미지(320*460)
+
+   <link rel="apple-touch-icon" href="app_icon.png" />
+   <link rel="apple-touch-startup-image" href="startup.png"/>
+
+5. *크롬 브라우저 전용 에뮬레이터(크롬 브라우저를 사용 한다)
+     http://chrome.google.com/webstore   => 검색창에  ripple mobile  =>크롬에 추가 
+
+----------------------------------------------------------------
+6. JQuery Mobile   =>  http://jquerymobile.com/
+    
+   1) 연결 파일 또는 직접 다운후 연결 (http://jquerymobile.com/download/)
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+    
+      ex) html5 템플릿
+         <!DOCTYPE html>
+        <html>
+        <head>
+           <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+           <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+           <style>
+        
+           </style>
+           <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+           <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+           <script>
+
+          </script>
+      </head>
+      <body>
+    
+      </body>
+      </html>  
+
+   2) page생성 방법 => <div data-role="page"></div>
+
+       ex1) 페이지의 구성
+           <div data-role="page">
+               <div data-role="header">
+                  <h1>Mobile</h1>
+               </div>
+               <div data-role="content">
+                   <ul data-role="listview">
+                      <li><a href="#">List Item 1</a></li>
+                      <li><a href="#">List Item 2</a></li>
+                      <li><a href="#">List Item 3</a></li>
+                      <li><a href="#">List Item 4</a></li>
+                  </ul>
+              </div>
+              <div data-role="footer">
+                   <h1>FOOTER</h1>
+              </div>
+           </div>
+ 
+         
+
+        ex2) 내부 페이지 이동 => 위에 예제에 추가
+           <!-- 두 번째 페이지 -->
+           <div data-role="page" id="second_page" data-add-back-btn="true">
+               <div data-role="header">
+                  <h1>Other Page</h1>
+              </div>
+              <div data-role="content">
+                 <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div data-role="footer">
+                   <h1>FOOTER</h1>
+              </div>
+           </div>
+
+           *<li><a href="#second_page">List Item 1</a></li>  =>추가
+            data-add-back-btn="true"   =>뒤로가기 처리
+          
+
+        ex3) data-transition=""   =>페이지 이동 방법 
+             <li><a href="#second_page" data-transition="slide">List Item 1</a></li>
+             <li><a href="#second_page" data-transition="slideup">List Item 2</a></li>
+             <li><a href="#second_page" data-transition="slidedown">List Item 3</a></li>
+             <li><a href="#second_page" data-transition="pop">List Item 4</a></li>
+             <li><a href="#second_page" data-transition="fade">List Item 5</a></li>
+             <li><a href="#second_page" data-transition="flip">List Item 6</a></li>
+  
+           
+
+        ex4) data-rel=""   => 다이얼로그 형태
+             <li><a href="#second_page" data-rel="dialog" data-transition="pop">List Item 7</a></li>
+             <li><a href="#second_page" data-rel="dialog" data-transition="slidedown">List Item 8</a></li>
+             <li><a href="#second_page" data-rel="dialog" data-transition="flip">List Item 9</a></li>
+       
+           
+
+       ex5) 리스트 구분자 data-role="list-divider"
+            <ul data-role="listview">
+                <li data-role="list-divider">Divider</li>
+                <li><a href="#">List Item 1</a></li>
+                <li><a href="#">List Item 2</a></li>
+                <li data-role="list-divider">Divider</li>
+                <li><a href="#">List Item 3</a></li>
+                <li><a href="#">List Item 4</a></li>
+                <li><a href="#">List Item 5</a></li>
+                <li><a href="#">List Item 6</a></li>
+                <li data-role="list-divider">Divider</li>
+                <li><a href="#">List Item 7</a></li>
+                <li><a href="#">List Item 8</a></li>
+                <li><a href="#">List Item 9</a></li>
+                <li><a href="#">List Item 0</a></li>
+            </ul>
+           
+         
+
+        ex6) 리스트를 하나의 그룹으로 처리(data-insert="true") / 추가설명(class="ui-li-aside") / 카운터(class="ui-li-count")
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">Divider</li>
+                <li>
+                    <a href="#">
+                        <h3>List Item 1</h3>
+                        <p>Lorem ipsum</p>
+                        <span class="ui-li-aside">Aside</span>
+                        <span class="ui-li-count">103</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>List Item 2</h3>
+                        <p>Lorem ipsum</p>
+                        <span class="ui-li-aside">Aside</span>
+                        <span class="ui-li-count">52</span>
+                    </a>
+                </li>
+
+                <li data-role="list-divider">Divider</li>
+                <li>
+                    <a href="#">
+                        <h3>List Item 3</h3>
+                        <p>Lorem ipsum</p>
+                        <span class="ui-li-aside">Aside</span>
+                        <span class="ui-li-count">273</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>List Item 4</h3>
+                        <p>Lorem ipsum</p>
+                        <span class="ui-li-aside">Aside</span>
+                        <span class="ui-li-count">274</span>
+                    </a>
+                </li>
+            </ul>
+
+           
+
+         ex7) 리스트에 이미지 삽입(<img />)  =>자동으로 80*80의 사이즈로 맞추어 준다. / data-icon=""
+             <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">Divider</li>
+                <li>
+                    <a href="#">
+                        <img src="ie.png" />
+                        <h3>List Item 1</h3>
+                        <p>Lorem ipsum</p>
+                        <span class="ui-li-aside">Vestibulum</span>
+                        <span class="ui-li-count">273</span>
+                    </a>
+                    <a href="#" data-icon="search"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="google.png" />
+                        <h3>List Item 2</h3>
+                        <p>Lorem ipsum</p>
+                        <span class="ui-li-aside">libero vel</span>
+                        <span class="ui-li-count">52</span>
+                    </a>
+                    <a href="#" data-icon="search"></a>
+                </li>
+                <li data-role="list-divider">Divider</li>   
+                <li>
+                    <a href="#">
+                        <img src="opera.png" />
+                        <h3>List Item 3</h3>
+                        <p>Lorem ipsum</p>
+                        <span class="ui-li-aside">ullamcorper</span>
+                        <span class="ui-li-count">103</span>
+                    </a>
+                    <a href="#" data-icon="gear"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="FF.png" />
+                        <h3>List Item 4</h3>
+                        <p>Lorem ipsum</p>
+                        <span class="ui-li-aside">sit amet</span>
+                        <span class="ui-li-count">57</span>
+                    </a>
+                    <a href="#" data-icon="gear"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="safari.png" />
+                        <h3>List Item 5</h3>
+                        <p>Lorem ipsum</p>
+                        <span class="ui-li-aside">SentAVant</span>
+                        <span class="ui-li-count">57</span>
+                    </a>
+                    <a href="#" data-icon="gear"></a>
+                </li>
+           </ul>
+
+         
+          * data-icon => arrow-l , arrow-r , arrow-u , arrow-d , delete , plus , minus , check , gear
+                              refresh , forward , back , grid , star , alert , info , home , search 
+        
+        ex8) 검색어 입력창(해당 리스트의 요소를 검색) =>  data-filter="true"
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li data-role="list-divider">Divider</li>
+                <li><a href="#">방화</a></li>
+                <li><a href="#">개화산</a></li>
+                <li><a href="#">김포공항</a></li>
+                <li><a href="#">송정</a></li>
+                <li><a href="#">마곡</a></li>
+                <li><a href="#">발산</a></li>
+                <li><a href="#">우장산</a></li>
+                <li><a href="#">화곡</a></li>
+                <li><a href="#">까치산</a></li>
+                <li><a href="#">신정</a></li>
+                <li><a href="#">목동</a></li>
+                <li><a href="#">오목교</a></li>
+                <li><a href="#">양평</a></li>
+                <li><a href="#">영등포구청</a></li>
+                <li><a href="#">영등포시장</a></li>
+                <li><a href="#">신길</a></li>
+                <li><a href="#">여의도</a></li>
+                <li><a href="#">여의나루</a></li>
+                <li><a href="#">마포</a></li>
+                <li><a href="#">공덕</a></li>
+                <li><a href="#">애오개</a></li>
+                <li><a href="#">충정로</a></li>
+                <li><a href="#">서대문</a></li>
+                <li><a href="#">광화문</a></li>
+                <li><a href="#">종로3가</a></li>
+                <li><a href="#">을지로4가</a></li>
+                <li><a href="#">동대문운동장</a></li>
+                <li><a href="#">청구</a></li>
+                <li><a href="#">신금호</a></li>
+                <li><a href="#">행당</a></li>
+                <li><a href="#">왕십리</a></li>
+                <li><a href="#">마장</a></li>
+                <li><a href="#">답십리</a></li>
+                <li><a href="#">장한평</a></li>
+                <li><a href="#">군자</a></li>
+                <li><a href="#">아차산</a></li>
+                <li><a href="#">광나루</a></li>
+                <li><a href="#">천호</a></li>
+                <li><a href="#">길동</a></li>
+                <li><a href="#">굽은다리</a></li>
+                <li><a href="#">명일</a></li>
+                <li><a href="#">고덕</a></li>
+                <li><a href="#">상일동</a></li>
+                <li><a href="#">둔촌동</a></li>
+                <li><a href="#">올림픽공원</a></li>
+                <li><a href="#">방이</a></li>
+                <li><a href="#">오금</a></li>
+                <li><a href="#">개롱</a></li>
+                <li><a href="#">거여</a></li>
+                <li><a href="#">마천</a></li>
+            </ul>
+  
+           
+
+          ex9) 아코디언 기능 구현 => <div data-role="collapsible"> , <h1>태그는 아코디언 제목
+             <div data-role="collapsible">
+                <h1>Accordion</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div data-role="collapsible">
+                <h1>Accordion</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div data-role="collapsible">
+                <h1>Accordion</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            
+
+          ex10) 교대로 열리고 닫히는 아코디언 기능(그룹) => <div data-role="collapsible-set"></div>
+             <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                    <h1>Accordion</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Accordion</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Accordion</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+               
+           
+
+          ex11) 헤더와 푸터 부분에 버튼 놓기(헤더=>2개의 버튼 가능 / 푸터=>일반적으로 3~4개의 버튼) 
+                  <a data-icon="">태그를 사용하면 자동으로 버튼이 만들어짐.
+
+               <div data-role="header" data-position="fixed">
+                   <a href="#" data-icon="home" class="ui-btn-left">Home</a>
+                   <h1>Mobile</h1>
+                   <a href="#" data-icon="gear" class="ui-btn-right">Settings</a>
+              </div>
+            -----------------------------
+              <div data-role="footer" data-position="fixed">
+                   <a href="#" data-icon="plus">Add</a>
+                   <a href="#" data-icon="delete">Delete</a>
+                   <a href="#" data-icon="refresh">Refresh</a>
+             </div>
+              
+            
+
+          ex12) 네비게이션 바
+                 - 헤더나 푸터안에 <div data-role="navbar">를 삽입하고 그안에 <ul>태그로 리스트를 만들면 자동 생성
+                 - 5개 까지는 가로한 행으로 구성되고..6개 부터는 다중행으로 구성..
+
+                <div data-role="header" data-position="fixed">
+                   <a href="#" data-icon="home" class="ui-btn-left">Home</a>
+                   <h1>Mobile</h1>
+                   <a href="#" data-icon="gear" class="ui-btn-right">Settings</a>
+                   
+                   <div data-role="navbar">
+                      <ul>
+                         <li><a href="#">One</a></li>
+                         <li><a href="#">Two</a></li>
+                         <li><a href="#">Three</a></li>
+                         <li><a href="#">Four</a></li>
+                         <li><a href="#">Five</a></li>
+                      </ul>
+                  </div>
+               </div>
+
+            
+
+          ex13)
+              *  data-icon="" 속성을 사용해서 메뉴에 아이콘을 삽입할 수 있다.
+              * <li><a href="#" data-icon="grid">One</a></li>
+                <li><a href="#" data-icon="star">Two</a></li>
+                <li><a href="#" data-icon="alert">Three</a></li>
+                <li><a href="#" data-icon="info">Four</a></li>
+                <li><a href="#" data-icon="gear">Five</a></li>
+           
+
+          ex14)
+             * class="ui-btn-active"  속성을 사용하면 버튼을 활성화 상태로 만들 수 있다.
+             * <li><a href="#" data-icon="grid" class="ui-btn-active">One</a></li>
+               <li><a href="#" data-icon="star">Two</a></li>
+               <li><a href="#" data-icon="alert">Three</a></li>
+               <li><a href="#" data-icon="info">Four</a></li>
+               <li><a href="#" data-icon="gear">Five</a></li>
+            
+         
+         ex15) 테마 지정 방법 (data-theme="") => a(검정),b(파랑),c(회색),d(흰색),e(노랑)의 다섯가지 테마를 가지고 있다.
+             <div data-role="header">
+                 <a href="#" data-icon="gear" class="ui-btn-left">Settings</a>
+                 <h1>Mobile</h1>
+                 <a href="#" data-icon="gear" class="ui-btn-right">Settings</a>
+                 <div data-role="navbar">
+                   <ul>
+                      <li><a href="#" data-icon="home" data-theme="b">One</a></li>
+                      <li><a href="#" data-icon="gear" data-theme="c">Two</a></li>
+                      <li><a href="#" data-icon="grid" data-theme="d">Two</a></li>
+                      <li><a href="#" data-icon="star" data-theme="e">Two</a></li>
+                  </ul>
+                </div>
+             </div>
+
+           
+
+          ex16) 다른 페이지 연결 -(sub1.htm , sub2.htm)
+            <div data-role="content">
+               <a href="map.html" data-role="button">Map Link</a>
+               <a href="sub1.htm" data-role="button">Sub1 Page Link</a>
+               <a href="sub2.htm" data-role="button">Sub2 Page Link</a>
+            </div>
+             
+        
+            * 메일기능과 전화기능 => <a href="mailto:">  ,  <a href="tel:">, <a href="sms:">
+              <a href="mailto:rintiantta@naver.com "data-role="button">Mail Link</a>
+              <a href="tel:010-0000-0000" data-role="button">Phone Link</a>
+              <a href="sms:010-0000-0000" data-role="button">sms Link</a>
+
+
+---------------------------------------------------------------------------
+          *http://jquerymobile.com/
+            상단 메뉴의 Demos
+
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+            <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+            <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+
+
+
+
+
+      

@@ -1,0 +1,47 @@
+/* CSS Document */
+
+
+.subconL h3{
+	text-indent:-9999px;
+	width:210px;
+	height:105px;
+	background:url(../images/side_about.jpg) no-repeat;
+	}
+.subconL .sideBar li a{
+	display:block;
+	text-indent:-9999px;
+	width:210px;
+	height:51px;
+}
+.subconL .sideBar .sideAbout{
+	background:url(../images/side_hi.jpg)no-repeat;
+	
+	}
+.subconL .sideBar .sideHi{
+	background:url(../images/side_introduce.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideHistory{
+	
+	background:url(../images/side_history.jpg) no-repeat;
+	}
+.subconL .sideBar .sideMap{
+	background:url(../images/side_map.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideAbout:hover{
+	background:url(../images/side_hiOver.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideHi:hover{
+	background:url(../images/side_introduceOver.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideHistory:hover{
+	
+	background:url(../images/side_historyOver.jpg) no-repeat;
+	}
+.subconL .sideBar .sideMap:hover{
+	background:url(../images/side_mapOver.jpg) no-repeat;
+	
+	}

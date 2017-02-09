@@ -1,0 +1,18 @@
+/* CSS Document */
+
+
+.tabs {position:relative; width:669px;  } 
+.tabs a.tab {display:block; width:223px; height:53px; text-indent:-999px;
+        overflow:hidden; position:absolute;} 
+.tabs a.tab1{background:url(../images/content2/tab1.jpg);left:0; top:0}
+.tabs a.tab2{background:url(../images/content2/tab2.jpg);left:223px; top:0}
+.tabs a.tab3{background:url(../images/content2/tab3.jpg) no-repeat;left:446px; top:0}
+
+.tabs .contlist {display:none; padding-top:120px; line-height:1.75em;} 
+.tabs .contlist .firstLine{
+	color:#333;
+	font-size:20px;
+	margin-bottom:20px;
+	
+	}
+.tabs .contlist p{ line-height:1.75em;} 

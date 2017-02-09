@@ -1,0 +1,207 @@
+/* side menu current */
+.subconL .sideBar li a.current{
+	background:url(../common/images/side_overseaOver.jpg) no-repeat;
+	} 
+
+
+#subconR h2 a{
+	display:block;
+	width:240px;
+	height:40px;
+	background:url(../images/content2/sub4_2content_title.jpg) no-repeat;
+	text-indent:-9999px;
+	margin-bottom:50px;
+	
+	
+	}
+#subconR .bread{
+	position:absolute;
+	top:30px;
+	right:50px;
+	
+	
+	}
+#subconR .contentHead{
+	font-size:18px;
+	margin-bottom:50px;
+	
+	}
+
+#subconR ul{
+	margin-bottom:70px;
+	overflow:hidden;
+	
+	}
+#subconR li{
+	width:205px;
+	height:300px;
+	margin-right:27px;
+	
+	
+
+	float:left;
+	}
+
+#subconR .youthBox{
+	margin-right:0px;
+	
+	}
+	
+#subconR li h3{
+	width:205px;
+	height:41px;
+	
+	background:url(../images/content2/stepArrow1.jpg) no-repeat left top;
+	text-indent:-9999px;
+	margin-bottom:20px;
+	}
+#subconR li .step1{
+	
+	
+	background:url(../images/content2/stepArrow1.jpg) no-repeat left top;
+	
+}
+#subconR li .step2{
+	
+	
+	background:url(../images/content2/stepArrow2.jpg) no-repeat left top;
+	
+}
+#subconR li .step3{
+	
+	
+	background:url(../images/content2/stepArrow3.jpg) no-repeat left top;
+	
+}
+#subconR li p{
+	
+	margin-top:20px;
+
+	
+	}
+#subconR li span{
+	color:#333;
+	font-weight:bold;
+	}
+	
+
+#subconR .tabs ul{
+	margin-top:50px;
+	
+	}
+#subconR .tabs .firstLine{
+	font-weight:bold;
+	font-size:24px;
+	
+	
+	
+	}
+#subconR .tabs ul li{
+	width:670px;
+	height:230px;
+	
+	margin-bottom:0px;
+	
+	}
+#subconR .tabs ul .momHeath{
+
+	padding-left:355px;
+	background:url(../images/content2/momPic.jpg)left top no-repeat;
+
+	
+	}
+#subconR .tabs ul h4{
+	font-size:18px;
+	color:#333;
+	font-weight:bold;
+	margin-top:25px;
+	
+	}
+#subconR .tabs ul p{
+	
+	width:314px;
+	margin-top:10px;
+	
+	
+	}
+#subconR .tabs .babyFood{
+
+	
+	background:url(../images/content2/babyEat.jpg)right top no-repeat;
+
+	
+	}
+
+
+#subconR .tabs .babyDevelop{
+
+	
+	background:url(../images/content2/babyStudy.jpg)left top no-repeat;
+	padding-left:355px;
+	
+	}
+
+
+
+
+
+
+/*  child support tab  */
+
+
+#subconR .tabs .childEdu{
+
+	padding-left:355px;
+	background:url(../images/content2/childEdu.jpg)left top no-repeat;
+
+	
+	}
+
+
+#subconR .tabs .childSchool{
+
+	
+	background:url(../images/content2/childSchool.jpg)right top no-repeat;
+
+	
+	}
+
+
+#subconR .tabs .childRight{
+
+	
+	background:url(../images/content2/childRight.jpg)left top no-repeat;
+	padding-left:355px;
+	
+	}
+
+
+
+/*  youth support tab  */
+
+
+#subconR .tabs .youthSkill{
+
+	padding-left:355px;
+	background:url(../images/content2/youthSkill.jpg)left top no-repeat;
+
+	
+	}
+
+
+#subconR .tabs .youthHealth{
+
+	
+	background:url(../images/content2/youthHealth.jpg)right top no-repeat;
+
+	
+	}
+
+
+#subconR .tabs .youthChange{
+
+	
+	background:url(../images/content2/youthChange.jpg)left top no-repeat;
+	padding-left:355px;
+	
+	}

@@ -1,0 +1,195 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link href="images/app_icon.png" rel="apple-touch-icon-precomposed"  />
+<link href="images/startup.png" rel="apple-touch-startup-image"/>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.mmenu.css"  rel="stylesheet" type="text/css"/>
+<link href="css/sub_layout.css" rel="stylesheet" type="text/css">
+<link href="css/sub1_content2.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<!--  아이폰에서 refresh할때 스트롤탑   -->
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+
+<!--  서치박스 클릭하면 나옴  -->
+<script type="text/javascript"> 
+
+  $(document).ready(function() {
+
+   $("#btn1").toggle(function() {
+
+    $("#searchBox").css("display","block");
+
+   }, function() {
+
+    $("#searchBox").css("display","none");
+
+   });
+
+  });
+
+ </script>
+
+<!--  side slide in hamburger menu   -->
+<script type="text/javascript" src="js/jquery.mmenu.js" language="javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $('nav#menu').mmenu();			
+  });
+</script>
+
+<!--  후원하기박스 터치 슬라이더   -->
+<script type="text/javascript" src="js/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function() {
+	$("#touchSlider").touchSlider({
+		roll : false, 
+		flexible : true,
+		view : 4
+	});
+});
+</script>
+<!--  scroll to top   -->
+<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+			
+			var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'easeOutElastic' 
+		 		};
+				$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+
+<!--  익스 html5 지원코드   -->
+<!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--  익스 css3 지원코드   -->
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<title>어린이재단::CEO 인사말</title>
+</head>
+<body>
+<div id="page">
+<header>
+	<div id="header">
+		<div id="wrap_head">
+			<div id="side_Nav"><a href="#menu" id="sideLeft_menu" class="nav-toggle"></a>
+				<nav id="menu">
+					<ul>
+						<li class="Menu0"><a class="askDonation" href="#"><img src="images/askDonation.png" alt="희망의 빛을 선물하세요!" style="width:100%;"/></a></li>
+						<li class="firstMenu"><a href="sub1_1.html">재단소개</a></li>
+						<li class="Menu2"><a href="sub1_1.html">참여하기</a></li>
+						<li class="Menu3"><a href="sub1_1.html">후원하기</a></li>
+						<li class="Menu4"><a href="sub1_1.html">재단활동</a></li>
+						<li class="Menu5"><a href="sub1_1.html">재단소식</a></li>
+						
+					</ul>
+				</nav>
+			</div>
+			<div id="logo">
+				<h1><a href="index.html">어린이재단 로고</a></h1>
+			</div>
+			<a href="#" id="btn1"><span class="search_icon">검색</span></a>
+			<div id="searchBox">
+				<form id="search" action="#" method="get">
+					<fieldset>
+						<legend>검색</legend>
+						<div class="bg_search">
+							<div class="wrapBox">
+								<input type="text" name="input_search" class="type_text" title="검색" maxlength="255">
+							</div>
+							<input type="submit" id="Btn" class="type_btn" title="검색">
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<div class="">
+				<ul class="sub_menu verd">
+					<li><a href="sub1_1.html" >어린이재단은</a></li>
+					<li><a href="sub1_2.html" class="on">CEO 인사말</a></li>
+					<li><a href="sub1_3.html">재단연혁</a></li>
+					<li><a href="sub1_4.html">재단위치</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /wrap_head --> 
+		
+	</div>
+	<!-- /header --> 
+	
+</header>
+
+<!-- article s  -->
+<article>
+<div id="main"> 
+	<!-- 내용 콘텐츠 삽입 부분 -->
+	<h2>CEO 인사말</h2>
+	<h3><img src="images/sub1_2content_headingx2.png"  alt="안녕하십니까?"/></h3>
+	<p>어린이가 혼자 그리는 그림은 꿈이지만 어린이와 우리가 함께 그리는 그림은 미래가 됩니다. 
+		어린이재단은 어린이의 건강한 성장을 도우며 희망찬 미래를 열어갑니다 어린이의 올곧은 성장을 돕는 재단의 미래 사업에 동참하실 여러분을 기다립니다. 국내최대 아동복지 전문기관인 어린이재단에서 미래에 대한 투자 "나눔"을 시작하세요.</p>
+	<div class="ideas">
+		<ul>
+			<li class="vision"> <img  src="images/visionx2.jpg" height="18px" alt="vision" />
+			<p>한국을 대표하는 아동복지 전문기관이라는 소명과 자부심으로 일하고 있는 우리 재단은 사람을 귀하게 여기는 마음으로 아동의 생존권, 보호권, 발달권, 권리옹호 지원을 위한 복지 사업을 펼치고 있으며, 국내 아동뿐 아니라 가난과 질병으로 고통 받는 해외 아동을 위해 활동의 폭을 넓혀가고 있습니다.</p>
+			</li>
+			<li> <img  src="images/missionx2.jpg" height="18px" alt="mission" />
+				<p>대한민국이 지난 60여 년간 이루어낸 물질적 풍요에도 불구하고 아동복지에 있어서는 해결해야 할 과제가 많습니다. 우리 재단은 현재에 안주하지 않고 끊임없는 쇄신의 과정을 거쳐 사업의 발전을 도모할 것이며, 이를 통해 아동에게 가장 필요하고 꼭 맞는 복지 서비스를 제공함으로써 아동의 삶을 향상시키는데 최선을 다하겠습니다.</p>
+			</li>
+			<li> <img  src="images/furtherancex2.jpg" height="18px" alt="furtherance" />
+				<p>더불어, 우리 어린이재단은 지난 날 우리가 받았던 소중한 사랑을 한국을 넘어 지구촌의 소외된 아동들에게 돌려주는데 더욱 노력할 것입니다. 국경, 인종, 종교, 성별을 초월하여 인류애를 실천하는 국제 어린이재단연맹 회원기관으로서 국제 사회와의 끊임없는 소통을 건실하게 소임을 다하는 국제 NGO로 거듭나겠습니다.</p>
+			</li>
+			<li class="lastIdea">
+				<p>우리 어린이재단은 1948년 해외원조기관 CCF에서 근원하여 지난 65년 동안 이땅의 소외된 아동들을 위해 나눔을 실천해오고 있습니다. 어린이재단에 보내주시는 한결같은 관심과 사랑에 깊이 감사 드리며 여러분 가정에 건강과 행복이 가득 하시기를 진심으로 기원합니다.</p>
+				 <img  src="images/ceo_signx2.jpg" width="162px" alt="sign" />
+			</li>
+		</ul>
+		</div>
+	</div>
+	<!-- /main   -->
+	</article>
+	<footer>
+		<div id="footer">
+			<input type="button"  value="로그인">
+			<input type="button"  value="PC버전">
+			<input type="button"  value="SNS">
+			<input type="button"  value="전체보기">
+			<p class="privacy"><a href="#">개인정보취급방침</a><span class="bar">|</span><a href="#">이용약관</a><span class="bar">|</span><a href="#">인재채용</a></p>
+			<div class="footerCopy">
+				<p>&copy; 2014 Childfund Korea</p>
+			</div>
+			<div class="top"><a href="#" id="toTop"> <img src="images/quick_top.png"  alt="상단으로 이동" width="40" height="40"/></a></div>
+		</div>
+	</footer>
+</div>
+<!-- /page   -->
+
+</body>
+</html>

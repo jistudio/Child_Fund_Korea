@@ -1,0 +1,117 @@
+/* side menu current */
+.subconL .sideBar li a.current {
+	background:url(../common/images/side_faqOver.jpg) no-repeat;
+}
+#subconR h2 a {
+	display:block;
+	width:240px;
+	height:40px;
+	background:url(../images/content2/sub6_2content_title.jpg) no-repeat;
+	text-indent:-9999px;
+	margin-bottom:50px;
+}
+#subconR .bread {
+	position:absolute;
+	top:30px;
+	right:50px;
+}
+/* sample qna */
+#subconR .faqSample {
+	width:670px;
+	background:#f1f1f1;
+	overflow:hidden;
+}
+#subconR .faqSample li {
+	width:334px;
+	border-right:1px solid #fff;
+	float:left;
+}
+#subconR .faqSample li {
+	width:334px;
+	border-right:1px solid #fff;
+	float:left;
+}
+#subconR .sampleQ {
+	padding:20px 30px;
+	border-bottom:1px solid #fff;
+	color:#333;
+	font-weight:bold;
+	line-height:2em;
+}
+#subconR .faqSample p img {
+	padding-right:10px;
+}
+#subconR .sampleA {
+	font-size:13px;
+	padding: 20px 30px 30px 70px;
+	background:url(../images/content2/answer.jpg) no-repeat 30px 20px;
+	line-height:1.75em;
+}
+/* qna */
+
+
+.faq {
+	width:670px;
+	
+	position:relative;
+	border-top:3px solid #666; border-bottom:1px solid #ccc; margin-top:30px;
+}
+
+
+.faq ul {
+	margin:0;
+	padding:0;
+	list-style:none
+}
+.faq .q {
+	margin:0;
+	border-top:1px solid #f1f1f1;
+}
+.faq .q a.trigger {
+	display:block;
+	padding:20px;
+	
+	color:#333;
+	text-align:left;
+	font-weight:bold;
+	background:url(../images/content2/faq_less.png) no-repeat #f1f1f1 630px center ;
+
+}
+.faq .hide .q a.trigger {
+
+	background:none;
+	color:#333;
+	font-weight:bold;
+	background:url(../images/content2/faq_more.png) no-repeat 630px center ;
+	
+
+
+}
+.faq .q a.trigger:hover, .faq .q a.trigger:active, .faq .q a.trigger:focus {
+	background:url(../images/content2/faq_more.png) no-repeat #f1f1f1  630px center ;
+	color:#000
+}
+.faq .a {
+	margin:0;
+	padding:30px 70px;
+	background:#f1f1f1;
+	font-size:13px;
+	border-top:1px solid #fff;
+}
+/* pagenation */
+
+
+#subconR .pagenation ul {
+	width:278px;
+	margin:30px auto;
+}
+#subconR .pagenation a {
+	display:block;
+	width:26px;
+	height:26px;
+	float:left;
+	margin-right:10px;
+}
+#subconR .pagenation a.lastPage {
+	margin-right:0px;
+}

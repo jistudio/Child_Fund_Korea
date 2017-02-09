@@ -1,0 +1,77 @@
+/* side menu current */
+.subconL .sideBar li a.current{
+	background:url(../common/images/side_announceOver.jpg) no-repeat;
+	} 
+
+
+#subconR h2 a{
+	display:block;
+	width:240px;
+	height:40px;
+	background:url(../images/content1/sub5_1content_title.jpg) no-repeat;
+	text-indent:-9999px;
+	margin-bottom:50px;
+	
+	
+	}
+#subconR .bread{
+	position:absolute;
+	top:30px;
+	right:50px;
+	
+	}
+/* search */
+#subconR .searchBar{padding-top:10px; height:40px;background:#4bb940;}
+#subconR .searchInner{width:307px; margin:0 auto;   height:30px; }
+#subconR .searchLabel{color:#fff; }
+#subconR #searchBox{border:none; height:30px; }
+#subconR .searchBtn{width:30px; height:30px;text-indent:-9999px; overflow:hidden; background:url(../images/content1/searchBtn.jpg); border:none; cursor:pointer;
+
+}
+	
+/* 게시판 */
+#subconR caption, #subconR thead th{position:absolute; left:-1000%; top:0; width:1px;height:1px; overflow:hidden}
+
+#subconR table{border-collapse:collapse;}
+
+
+#subconR .notice{overflow:hidden ;width:670; clear:both; position:relative; color:#666; border-top:3px solid #666; border-bottom:1px solid #ccc; margin-top:10px;}
+#subconR .notice table{width:670px; font-size:14px; line-height:2em;color:#666;} 
+#subconR .notice table thead th{ background:#4bb940; color:#FFFFFF; font-weight:normal;}
+#subconR .notice table thead tr{}
+#subconR .notice table tr{border-bottom:1px solid #f1f1f1;}
+#subconR .notice table .row{padding-left:10px;}
+#subconR .notice table .listDate{padding-right:0px;}
+#subconR .notice table tr.no_line{border-bottom:0}
+#subconR .notice table .form_tr{text-align:left}
+#subconR .notice table .form_th{text-align:right; padding-right:10px}
+#subconR .notice table a{  color:#333333; padding:50px;}
+#subconR .notice table a:hover{color:#4bb940; }
+#subconR .notice table th, table tr, table td{padding:20px 0; font-weight:normal;}
+#subconR .notice table tr{text-align:center;vertical-align:inherit; display:table-row} 
+#subconR .notice table th, table td{display:table-cell; vertical-align:inherit; text-align:center}
+#subconR .notice table .td_left{text-align:left; padding-left:0px}
+
+/* pagenation */
+
+
+#subconR .pagenation ul{
+	width:278px;
+	
+	margin:30px auto;
+	
+	
+	}
+#subconR .pagenation a{
+	display:block;
+	width:26px;
+	height:26px;
+	float:left;
+	margin-right:10px;
+	
+	}
+#subconR .pagenation a.lastPage{
+	
+	margin-right:0px;
+	
+	}

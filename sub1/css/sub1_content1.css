@@ -1,0 +1,78 @@
+/* side menu current */
+.subconL .sideBar li a.current{
+	background:url(../common/images/side_hiOver.jpg) no-repeat;
+	} 
+
+
+#subconR h2 a{
+	display:block;
+	width:240px;
+	height:40px;
+	background:url(../images/content1/sub1content_title.jpg) no-repeat;
+	text-indent:-9999px;
+	
+	
+	}
+#subconR .bread{
+	position:absolute;
+	top:30px;
+	right:50px;
+	
+	}
+
+#subconR .description{
+	margin-top:50px;
+	
+	}
+#subconR .future{
+	margin:20px 0 100px 0;
+	padding-right:30px;
+	color:#666;
+	line-height:1.75em;
+	
+	}
+	
+#subconR .philosophy{
+	
+	width:649px;
+	margin:0 auto;
+
+	
+	}
+#subconR .philosophy li{
+	width:274px;
+
+	text-align:center;
+	float:left;
+	
+	}
+#subconR .philosophy li p{
+	margin-top:30px;
+	color:#666;
+	line-height:1.75em;
+	
+	}
+#subconR .philosophy .pro{
+	
+	padding-right:50px;
+	padding-bottom:50px;
+	}
+#subconR .philosophy .clear{
+	
+	padding-left:50px;
+	border-left:1px solid #f1f1f1;
+	padding-bottom:50px;
+	}
+#subconR .philosophy .historic{
+	clear:both;
+	border-top:1px solid #f1f1f1;
+	border-right:1px solid #f1f1f1;
+	padding-top:50px;
+	padding-right:50px;
+	}
+#subconR .philosophy .global{
+	
+	padding-top:50px;
+	border-top:1px solid #f1f1f1;
+	padding-left:50px;
+	}

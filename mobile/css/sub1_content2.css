@@ -1,0 +1,71 @@
+
+
+#menu .firstMenu{
+	
+	
+	color:#4bb940;
+	background:url(../images/arrowR.png) no-repeat 160px center;
+	background-size:10px 14px;
+	
+
+	}
+
+
+#main h2 {
+	
+	margin:5% 0 ;
+	font-size:2em;
+	
+	
+
+	color:#333;
+	font-weight:bold;
+	
+	
+	
+}
+
+#main h3 {
+	font-size:1.25em;
+	color:#4bb940;
+	
+	margin-bottom:5%;
+	line-height:1.5em;
+	text-align:justify;
+}
+
+#main h3 img{
+	max-width:500px;
+	width:100%;
+}
+#main p {
+	font-size:1em;
+	text-align:justify;
+	line-height:1.5em;
+	margin-top:1%;
+	
+
+	
+}
+
+	
+#main .ideas li{
+	
+	
+	text-align:left;
+	margin:7% 0;
+
+	
+	}
+#main .lastIdea p{
+	
+	
+	
+	margin-bottom:5%;
+
+
+	
+	}
+
+
+

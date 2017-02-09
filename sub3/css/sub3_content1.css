@@ -1,0 +1,145 @@
+/* side menu current */
+.subconL .sideBar li a.current {
+	background:url(../common/images/side_donationHowOver.jpg) no-repeat;
+}
+#subconR h2 a {
+	display:block;
+	width:300px;
+	height:40px;
+	background:url(../images/content1/sub3_1content_title.jpg) no-repeat;
+	text-indent:-9999px;
+}
+#subconR .bread {
+	position:absolute;
+	top:30px;
+	right:50px;
+}
+#subconR .nanumWrap{
+	overflow:hidden;
+	margin-top:70px;
+	}
+
+#subconR .nanum{
+	width:335px;
+	  height:220px;
+	 
+	  
+	  float:left;
+	  
+	  color:#333;
+	  font-size:23px;
+	  font-weight:bold;
+	  line-height:1.5em;
+	  
+	 
+	}
+
+#subconR .nanum p{
+
+	 margin-top:15px;
+	  color:#666;
+	  font-size:18px;
+	  padding-right:30px;
+	  font-weight:normal;
+
+	}
+#subconR #videoAd{
+	 width:335px;
+	  height:220px;
+	  
+	
+	  float:left;
+	}
+#subconR .whatKinds ul{
+	overflow:hidden;
+	margin-top:70px;
+	
+	}
+#subconR .whatKinds li{
+	width:335px;
+	height:335px;
+	float:left;
+	position:relative;
+	
+	}
+#subconR .whatKinds li h4 a{
+	display:block;
+	font-size:26px;
+	font-weight:bold;
+	width:100px;
+	margin:170px auto 0px auto;
+	
+	}
+#subconR .whatKinds .monthly h4 a, #subconR .whatKinds .companies h4 a{
+		color:#fff;
+	
+	}
+#subconR .whatKinds .easy h4 a, #subconR .whatKinds .once h4 a{
+		color:#4bb940; 
+	
+	}
+#subconR .whatKinds li p{
+	margin:20px 30px 30px 40px;
+	font-weight:normal;
+	
+	}
+#subconR .whatKinds .monthly{
+	background:url(../images/content1/monthDonation.png) no-repeat #4bb940 center 40px;
+	color:#fff;
+	
+	}
+#subconR .whatKinds .once{
+	background:url(../images/content1/onceDonation.png) no-repeat center 40px #f7f7f7;
+	color:#4bb940; 
+	}
+#subconR .whatKinds .easy{
+	background:url(../images/content1/easyDonation.png) no-repeat #f7f7f7 center 40px;
+	color:#4bb940;
+	}
+#subconR .whatKinds .companies{
+	background:url(../images/content1/companyDonation.png) no-repeat #4bb940 center 40px;
+	color:#fff;
+	}
+#subconR .whatKinds li span a{
+	display:block;
+	width:25px;
+	height:25px;
+	position:absolute;
+	top:30px;
+	right:30px;
+	background:url(../images/content1/viewAllPlus.jpg) no-repeat;
+	text-indent:-9999px;
+
+	
+	
+	}
+
+#subconR .whatKinds .easy span a, #subconR .whatKinds .once span a{
+	background:url(../images/content1/viewAllPlus2.jpg) no-repeat;
+	
+	}
+#subconR .askGuide{
+	width:670px;
+	height:210px;
+	background:url(../images/content1/askGuide.jpg) no-repeat;
+	margin-top:50px;
+	
+	}
+#subconR .askGuide p{
+	margin:0px 40px 20px 240px;
+	padding-top:40px;
+	line-height:1.75em;
+	
+	color:#333; 
+	
+	}
+
+
+
+#subconR .askGuide span a{
+	display:block;	
+	color:#4bb940;
+	margin-left:240px;
+	font-weight:bold;
+	
+	}

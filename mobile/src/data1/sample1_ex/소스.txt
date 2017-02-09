@@ -1,0 +1,571 @@
+*Image_Replace
+
+  *{margin:0; padding:0}
+   h1 a{ display:block; width:224px; height:54px;
+       background:url(logo.jpg) 0 0 no-repeat; text-indent:-999px; 
+	   overflow:hidden}
+   h2 a{ display:block; width:495px; height:143px;
+       background:url(hello.gif); text-indent:-999px; 
+	   overflow:hidden}
+   h2 a:hover{background:url(hello_on.gif)}
+
+====================================
+*Image_Replace2
+
+ <ol>
+      <li>
+      결연신청-홈페이지, FAX, E-MAIL중손쉬운 방법으로 1:1 결연을 신청해 주세요.
+      </li>
+      <li>
+      문자발송-후원 확인 및 결제 예정안내 문자를 후원자 연락처로 보내 드립니다.
+      </li>
+      <li>
+      후원금납부-후원 신청후 2주일 이내첫 후원금 납부가 이루어집니다.
+      </li>
+      <li>
+      우편발송-후원 신청 후 한달이내 후원 아동의 관련 정보를 발송해 드립니다.
+      </li>
+  </ol>
+
+---------
+    *{margin:0; padding:0}
+    ol,ul{list-style:none}
+
+    ol{ width:557px; height:102px; background:url(back.jpg);
+	   text-indent: -999px; overflow:hidden}
+
+=======================================
+*링크걸린 이미지 대체 처리
+
+  <div class="service">
+    <h3 class="hidden"><a href="http://naver.com">Orange service</a></h3>
+    <p class="hidden">진심이 서비스하는 주택토탈 서비스 주거생활에 필요한 
+      모든 것 ART.CO.KR</p>
+    <a class="more" href="http://naver.com">Orange service 더보기</a>
+ </div>
+--------------
+   *{margin:0; padding:0;}
+   
+  .service {width:270px; overflow:hidden;}
+  .service a.more{display:block; width:270px; height:93px; 
+           background:url(intro_img.jpg) 0 0 no-repeat;
+           text-indent:-9999px; overflow:hidden;}
+   .service a.more:hover{background:url(intro_img_on.jpg)}	   
+   .hidden{position:absolute; left:-1000%; top:0; 
+            width:1px; height:1px;line-height:0;overflow:hidden;} 
+
+===========================================
+*image_sprite
+
+  *{margin:0; padding:0}
+  ul{list-style:none}
+  ul li{float:left; margin-right:20px; border:1px solid red}
+  ul li a{display:block; width:249px; height:110px; text-indent:-999px;
+         overflow:hidden}
+		 
+  .menu1 a{background:url(sprite_all.gif) 0 0 no-repeat}
+  .menu2 a{background:url(sprite_all.gif) 0 -120px no-repeat}
+  .menu3 a{background:url(sprite_all.gif) 0 -240px no-repeat}
+  
+  .menu1 a:hover{background:url(sprite_all.gif) 0 -360px no-repeat}
+  .menu2 a:hover{background:url(sprite_all.gif) 0 -480px no-repeat}
+  .menu3 a:hover{background:url(sprite_all.gif) 0 -600px no-repeat}
+
+============================================
+*1depth_menu
+
+ <nav>
+   <div id="mainmenu">
+      <ul class="tab">
+        <li class="tab01 on"><a href="ex1.html"><span>회사소개</span></a></li>
+        <li class="tab02"><a href="ex2.html"><span>사업소개</span></a></li>
+        <li class="tab03"><a href="#"><span>네트워크</span></a></li>
+        <li class="tab04"><a href="#"><span>홍보관</span></a></li>
+        <li class="tab05"><a href="#"><span>사회공헌</span></a></li>
+      </ul>
+   </div>
+   </nav>
+
+-----------
+-base.css
+
+* { padding:0; margin:0; border:0; }
+body { font-size:15px; font-family:helvetica ; }
+
+ul, ol, dl { list-style: none; }
+img { vertical-align:top; display:block; border:0; }
+a { text-decoration: none; }
+
+#mainmenu { width:100%; height:63px; background:url(../images/bg_bot_m_off.png) left top repeat-x; }
+#mainmenu li { float:left; width:20%; text-align:center; height:44px; background:url(../images/bg_menu.png) no-repeat left center; font-size:0.9em; padding-top:19px; }
+#mainmenu li:first-child { background: none; }
+#mainmenu ul li a { display: block; padding:10px;}
+#mainmenu ul li a span { color:#FFF; font-weight:bold;}
+#mainmenu li.on { background:url(../images/bg_bot_m_on.png) repeat-x 0 6px;}
+  
+===============================================
+*search_css
+
+
+  <div class="search">
+     <form action="" method="">
+        <input type="text" id="search" class="input_search">
+        <button type="submit" id="search_submit" class="btn_search">검색</button>
+     </form>
+   </div>
+-----------
+  img { vertical-align:top; border:0; }
+  input { -webkit-appearance: none; border: 0; }
+  .search { height: 42px; background:#FFF url(btn_search.png) right top no-repeat; 
+          width: 98%; margin:12px 12px 0 0; padding-left:10px; border:1px solid #CCC;
+          border-top-left-radius:10px; -webkit-border-top-left-radius:10px; 
+          border-bottom-left-radius:10px; -webkit-border-bottom-left-radius:10px;  }
+  .search input.input_search { float:left; height: 30px; margin-top: 7px; width: 80%; font-size:1.3em }
+  .search .btn_search { float:right; width:45px;height:42px;background:url(btn_search.png) no-repeat;text-indent:-999px; border:0;}
+
+
+==================================================
+*news
+
+-ex.html
+
+ <div class="news">
+   <ul class="n_img_list">
+    <li><a href="#"><img src="images/img1.png" alt="" /><span class="txt">강렬한 카리스마<br />
+    애프터스쿨</span></a></li>
+    <li><a href="#"><img src="images/img2.png" alt="" /><span class="txt">스파이더맨을 꿈꾸다<br />
+    앤드류 가필드</span></a></li>
+    <li><a href="#"><img src="images/img3.png" alt="" /><span class="txt">싱글들의 밥상<br />
+    전격 공개</span></a></li>
+   </ul>
+ </div>
+----------
+  *{margin:0; padding:0}
+  ul,ol{list-style:none}
+  img{border:0}
+  a{color:#333333; text-decoration:none}
+  
+  .news{border:1px solid #ccc; overflow:hidden}
+  .n_img_list { margin-top:10px; }
+  .n_img_list li {
+    float:left;
+    width:33.33%;
+    text-align:center;
+    line-height:1.1em;}
+  .n_img_list li a {
+    display:block;
+    width:100%; }
+  .n_img_list li span {
+    display:block;
+    font-size:12px;
+    margin-top:5px; }
+
+-------------------------------------
+-ex2.html
+
+ <div class="news">
+   <ul class="n_img_list">
+    <li><a href="#"><img src="images/img1.png" width="100%" alt="" /><span class="txt">강렬한 카리스마<br />
+    애프터스쿨</span></a></li>
+    <li><a href="#"><img src="images/img2.png" width="100%" alt="" /><span class="txt">스파이더맨을 꿈꾸다<br />
+    앤드류 가필드</span></a></li>
+    <li><a href="#"><img src="images/img3.png" width="100%" alt="" /><span class="txt">싱글들의 밥상<br />
+    전격 공개</span></a></li>
+   </ul>
+ </div>
+------------
+  *{margin:0; padding:0}
+  ul,ol{list-style:none}
+  img{border:0}
+  a{color:#333333; text-decoration:none}
+  
+  .news{border:1px solid #ccc; overflow:hidden}
+  .n_img_list { margin-top:10px; }
+  .n_img_list li {
+    float:left;
+    width:33.33%;
+    text-align:center;
+    line-height:1.1em;
+	padding:0 5px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;}
+  .n_img_list li a {
+    display:block;
+    width:100%; }
+  .n_img_list li span {
+    display:block;
+    font-size:12px;
+    margin-top:5px; }
+
+==============================================
+*table
+
+<table class="tline"  summary="프로그램별 서적안내">
+        <caption>
+        	<strong>프로그램별 서적안내</strong>
+        </caption>
+    	<tr class="row1">
+            <th scope="col">출판사</th>
+            <th scope="col">Adobe Illustrator CS6</th>
+            <th scope="col">Adobe Photoshop CS6</th>
+        </tr>
+        <tr>
+            <th scope="row">길벗</th>
+            <td>비비천사의 일러스트 디자인 무작정 따라하기</td>
+            <td>장미가족의 포토샵 CS6 무작정 따라하기</td>
+        </tr>
+        <tr>
+            <th scope="row">영진닷컴</th>
+            <td>쉽게 따라하는 실전 POP 일러스트</td>
+            <td>하루 30분 포토샵 CS6 쉽게배우기</td>
+        </tr>
+        <tr>
+            <th scope="row">교학사</th>
+            <td>알찬 예제로 배우는 일러스트 CS6</td>
+            <td>좋은 사진을 만드는 김00의 포토샵</td>
+        </tr>
+    </table>
+------------------
+    body{font: 14px Verdana, Geneva, sans-serif;}
+	table.tline{ width:100%; border-top: 1px solid #ccc;border-collapse:collapse;border-left: 1px solid #ccc;}
+    table.tline caption{margin-bottom:5px;}  
+    table.tline th{border-bottom:1px solid #ccc ;padding:5px; border-right: 1px solid #ccc;}
+	table.tline .row1 th{background:#F90}
+	table.tline td{border-bottom:1px solid #ccc ;padding:5px; border-right: 1px solid #ccc;}
+	tr:nth-child(odd) {background:#66CC00;}
+    tr:nth-child(even) {background:#669900;}
+	
+	td:nth-child(3n) {width:45%}
+    td:nth-child(3n+1) {width:10%}
+    td:nth-child(3n+2) {width:45%}
+
+============================================
+*공지사항 콘텐츠
+
+  <div class="notice">
+     <h3><a href="#">플랜공지사항</a></h3>
+      <ul>
+          <li><a href="#">[청춘PASS:Track 04.공감]11..<span class="listDate" style="color:#F60">[13.11.26]</span></a></li>
+          <li><a href="#">대림미술관 홍보·마케팅 인턴..<span class="listDate" style="color:#F60">[13.11.20]</span></a></li>
+          <li><a href="#">[구슬모아당구장]시각예술가..</a><span class="listDate" style="color:#F60">[13.11.19]</span></li>
+       </ul>
+     <a class="more" href="#">플랜공지사항 더보기</a>
+  </div>
+------------------------
+    *{ margin:0; padding:0}
+	body{font-family:"돋움"; font-size:12px; color:#333333}
+	ul,ol{list-style:none}
+	li{line-height:1.5em}
+	a{color:#333333; text-decoration:none}
+	a:hover{color:#060; text-decoration:none}
+ 
+ 
+    .notice{ position:relative;
+	       padding:5px 10px 10px; border:1px solid #CCC}
+	.notice h3{margin-bottom:15px}
+	.notice h3 a{display:block; width:88px; height:24px; 
+	      background:url(notice.jpg); text-indent:-999px; overflow:hidden}
+	
+	.notice li{ position:relative; line-height:2em; padding-left:10px;
+	          background:url(bullet.jpg) 0 center no-repeat; font-size:1em;
+			  overflow:hidden}
+	.notice li span{ position:absolute; top:0; right:0;}
+	.notice .more{display:block; width:16px; height:17px; 
+	     background:url(more.jpg); text-indent:-999px; overflow:hidden;
+		 position:absolute; top:7px; right:10px}
+		 
+=============================================
+*list_sample - list_img
+
+-ex.html
+
+<div class="culture">
+     <ul>
+        <li class="concert concert1">
+           <h4><img src="images/title1.jpg" alt=""  /></h4>
+           <ul>
+              <li>공연일자 : 2013년 11월 11일(월요일)~24(토요일)</li>
+              <li>공연시간 : 평일 20시 / 토요일 14시,17시/ 90분 (휴식없음)</li>
+              <li>티켓정보 : VIP석 10만원, R석 8만원, S석 6만원, A석 4만원</li>
+              <li>할인정보 : 단체할인 11명이상 20%할인</li>
+              <li>문의번호 : 1544 - 1681</li>
+           </ul>
+        </li>
+        <li class="concert concert2">
+           <h4><img src="images/title2.jpg" alt=""  /></h4>
+           <ul>
+              <li>공연일자 : 2013년 11월 11일(월요일)~24(토요일)</li>
+              <li>공연시간 : 평일 20시 / 토요일 14시,17시/ 90분 (휴식없음)</li>
+              <li>티켓정보 : VIP석 10만원, R석 8만원, S석 6만원, A석 4만원</li>
+              <li>할인정보 : 단체할인 11명이상 20%할인</li>
+              <li>문의번호 : 1544 - 1681</li>
+           </ul>
+        </li>
+        <li class="concert concert3">
+           <h4><img src="images/title3.jpg" alt=""  /></h4>
+           <ul>
+              <li>공연일자 : 2013년 11월 11일(월요일)~24(토요일)</li>
+              <li>공연시간 : 평일 20시 / 토요일 14시,17시/ 90분 (휴식없음)</li>
+              <li>티켓정보 : VIP석 10만원, R석 8만원, S석 6만원, A석 4만원</li>
+              <li>할인정보 : 단체할인 11명이상 20%할인</li>
+              <li>문의번호 : 1544 - 1681</li>
+           </ul>
+        </li>
+     </ul>
+  </div>
+------------
+ *{margin:0; padding:0}
+  body{font-family:"돋움"; font-size:12px;}
+  ul,ol{list-style:none}
+  
+  
+  .culture {width:100%;}
+  .culture .concert{line-height:1.5em; padding:10px 10px 10px 180px; border:1px solid #ccc; margin-bottom:20px;}
+  .culture .concert1{background:url(images/img1.jpg) 10px 10px no-repeat}
+  .culture .concert2{background:url(images/img2.jpg) 10px 10px no-repeat}
+  .culture .concert3{background:url(images/img3.jpg) 10px 10px no-repeat}
+  .culture .concert h4{margin-bottom:10px}
+
+------------------------------------
+-ex2.html
+
+  <div class="culture">
+     <ul>
+        <li class="concert concert1">
+          <dl>
+              <dt><img src="images/title1.jpg" alt=""></dt>
+              <dd>공연일자 : 2013년 11월 11일(월요일)~24(토요일)</dd>
+              <dd>공연시간 : 평일 20시 / 토요일 14시,17시/ 90분 (휴식없음)</dd>
+              <dd>티켓정보 : VIP석 10만원, R석 8만원, S석 6만원, A석 4만원</dd>
+              <dd>할인정보 : 단체할인 11명이상 20%할인</dd>
+              <dd>문의번호 : 1544 - 1681</dd>
+          </dl>
+        </li>
+        <li class="concert concert2">
+           <dl>
+              <dt><img src="images/title1.jpg" alt=""></dt>
+              <dd>공연일자 : 2013년 11월 11일(월요일)~24(토요일)</dd>
+              <dd>공연시간 : 평일 20시 / 토요일 14시,17시/ 90분 (휴식없음)</dd>
+              <dd>티켓정보 : VIP석 10만원, R석 8만원, S석 6만원, A석 4만원</dd>
+              <dd>할인정보 : 단체할인 11명이상 20%할인</dd>
+              <dd>문의번호 : 1544 - 1681</dd>
+          </dl>
+        </li>
+        <li class="concert concert3">
+           <dl>
+              <dt><img src="images/title1.jpg" alt=""></dt>
+              <dd>공연일자 : 2013년 11월 11일(월요일)~24(토요일)</dd>
+              <dd>공연시간 : 평일 20시 / 토요일 14시,17시/ 90분 (휴식없음)</dd>
+              <dd>티켓정보 : VIP석 10만원, R석 8만원, S석 6만원, A석 4만원</dd>
+              <dd>할인정보 : 단체할인 11명이상 20%할인</dd>
+              <dd>문의번호 : 1544 - 1681</dd>
+          </dl>
+        </li>
+     </ul>
+  </div>
+------------------
+  *{margin:0; padding:0}
+  body{font-family:"돋움"; font-size:12px;}
+  ul,ol{list-style:none}
+  
+  
+  .culture {width:100%;}
+  .culture .concert{line-height:1.5em; padding:10px; border:1px solid #ccc; margin-bottom:20px;}
+  .culture .concert1{background:url(images/img1.jpg) 10px 10px no-repeat}
+  .culture .concert2{background:url(images/img2.jpg) 10px 10px no-repeat}
+  .culture .concert3{background:url(images/img3.jpg) 10px 10px no-repeat}
+  .culture .concert dl{margin-left:170px}
+  .culture .concert dt{margin-bottom:10px}
+  .culture .concert dd{ background:url(images/dot.jpg) no-repeat; padding-left:15px }
+
+=====================================
+*list_sample - year
+
+-ex.html
+
+ <div class="history">
+  <ul>
+     <li>
+        <dl>
+           <dt><img src="images/2011.jpg" alt="2011년"></dt>
+           <dd>시민사회 피어리뷰 공개워크숍 몽골 사업성과 발제</dd>
+           <dd>베트남, 삼성생명 컴퓨터교실 사업 시작</dd>
+           <dd>케냐, 빈민여성 자립지원사업 시작</dd>
+           <dd>NGO봉사단 12기 베트남, 몽골, 미얀마, 르완다, 케냐 파견(10명)</dd>
+           <dd>미얀마, 사무소 개소</dd>
+           <dd>LG디스플레이 혁신리더 봉사단 베트남 파견(606명)</dd>
+        </dl>
+     </li>
+     <li>
+       <dl>
+           <dt><img src="images/2012.jpg" alt="2012년"></dt>
+           <dd>몽골, 제1회 후원의 밤 개최</dd>
+           <dd>르완다, 삼성-GCS 우정화장실 2호 완공</dd>
+           <dd>케냐, 빈민여성 자립지원사업 시작</dd>
+           <dd>LG디스플레이 동티모르 가축은행 캠페인 시작</dd>
+           <dd>케냐, 빈민가 여성 대상 비즈니스 교육 시작</dd>
+           <dd>제12회 지구촌대학생캠프 개최</dd>
+        </dl>
+     </li>
+     <li>
+       <dl>
+           <dt><img src="images/2013.jpg" alt="2013년"></dt>
+           <dd>케냐, 하비스트뷰티살롱 1호점 오픈</dd>
+           <dd>GCS홈커밍데이 개최</dd>
+           <dd>제2회 지구촌, 우리들의 나눔축제 개최</dd>
+           <dd>르완다, 삼성-GCS 우정도서관 1호 개관</dd>
+           <dd>베트남, 한국 초청연수 실시</dd>
+           <dd>후원의 밤 및 사무총장 취임식</dd>
+        </dl>
+     </li>
+  </ul>
+ </div>
+----------------
+  *{margin:0; padding:0}
+  body{font-family:"돋움"; font-size:12px;}
+  ul,ol{list-style:none}
+  
+  
+  .history {width:100%;}
+  .history li{line-height:1.5em; padding:10px; border:1px solid #ccc; margin-bottom:20px; position:relative}
+  .history dt{position:absolute; top:30px; left:10px} 
+  .history dd{margin-left:100px; background:url(images/dot.jpg) no-repeat; padding-left:15px }
+</style>
+
+-----------------------------------
+-ex2.html
+
+ <div class="history">
+  <ul>
+     <li>
+        <dl>
+           <dt><img src="images/2011.jpg" alt="2011년"  /></dt>
+           <dd>시민사회 피어리뷰 공개워크숍 몽골 사업성과 발제</dd>
+           <dd>베트남, 삼성생명 컴퓨터교실 사업 시작</dd>
+           <dd>케냐, 빈민여성 자립지원사업 시작</dd>
+           <dd>NGO봉사단 12기 베트남, 몽골, 미얀마, 르완다, 케냐 파견(10명)</dd>
+           <dd>미얀마, 사무소 개소</dd>
+           <dd>LG디스플레이 혁신리더 봉사단 베트남 파견(606명)</dd>
+        </dl>
+     </li>
+     <li>
+       <dl>
+           <dt><img src="images/2012.jpg" alt="2012년"  /></dt>
+           <dd>몽골, 제1회 후원의 밤 개최</dd>
+           <dd>르완다, 삼성-GCS 우정화장실 2호 완공</dd>
+           <dd>케냐, 빈민여성 자립지원사업 시작</dd>
+           <dd>LG디스플레이 동티모르 가축은행 캠페인 시작</dd>
+           <dd>케냐, 빈민가 여성 대상 비즈니스 교육 시작</dd>
+           <dd>제12회 지구촌대학생캠프 개최</dd>
+        </dl>
+     </li>
+     <li>
+       <dl>
+           <dt><img src="images/2013.jpg" alt="2013년"  /></dt>
+           <dd>케냐, 하비스트뷰티살롱 1호점 오픈</dd>
+           <dd>GCS홈커밍데이 개최</dd>
+           <dd>제2회 지구촌, 우리들의 나눔축제 개최</dd>
+           <dd>르완다, 삼성-GCS 우정도서관 1호 개관</dd>
+           <dd>베트남, 한국 초청연수 실시</dd>
+           <dd>후원의 밤 및 사무총장 취임식</dd>
+        </dl>
+     </li>
+  </ul>
+ </div>
+----------------
+  *{margin:0; padding:0}
+  body{font-family:"돋움"; font-size:12px;}
+  ul,ol{list-style:none}
+  
+  
+  .history {width:100%;}
+  .history li{line-height:1.5em; padding:10px; border:1px solid #ccc; margin-bottom:20px; }
+  .history dt{ float:left; margin:10px 0 0 0; display:inline} 
+  .history dd{margin-left:100px; background:url(images/dot.jpg) no-repeat; padding-left:15px }
+
+============================================
+*가로세로처리
+
+-ex.html
+
+  *{margin:0; padding:0}
+ 
+  
+  @media screen and (max-width: 320px){
+      .content{background:#FF9900; padding:10px}
+      .content h2{font-family:"돋움"; font-size:25px; color:#FFFFFF; margin:10px 0}
+      .content p{font-size:12px; text-align:justify; line-height:1.5em}
+	  .content .imgBox{width:100%; height:260px; margin-top:15px; background:url(img1.jpg) 0 0 no-repeat}
+	  .content .imgBox{-webkit-background-size:cover}
+  }
+  @media screen and (min-width: 321px){
+      .content{background:#390; padding:10px}
+      .content h2{font-family:"돋움"; font-size:25px; color:#000000; margin:10px 0}
+      .content p{font-size:12px; text-align:justify; line-height:1.5em}
+	  .content .imgBox{width:100%; height:260px; margin-top:15px; background:url(img2.jpg) 0 0 no-repeat}
+	  .content .imgBox{-webkit-background-size:cover} 
+  }
+
+--------------------
+-ex2.html
+
+ *{margin:0; padding:0}
+ 
+  
+  @media all and (orientation:portrait){
+      .content{background:#FF9900; padding:10px}
+      .content h2{font-family:"돋움"; font-size:25px; color:#FFFFFF; margin:10px 0}
+      .content p{font-size:12px; text-align:justify; line-height:1.5em}
+      .content .imgBox{width:100%; height:260px; margin-top:15px; background:url(img1.jpg) 0 0 no-repeat}
+	  .content .imgBox{-webkit-background-size:cover}
+  }
+  @media all and (orientation:landscape){
+      .content{background:#390; padding:10px}
+      .content h2{font-family:"돋움"; font-size:25px; color:#000000; margin:10px 0}
+      .content p{font-size:12px; text-align:justify; line-height:1.5em}  
+      .content .imgBox{width:100%; height:260px; margin-top:15px; background:url(img2.jpg) 0 0 no-repeat}
+	  .content .imgBox{-webkit-background-size:cover}
+  }
+
+==========================================
+*하단메뉴고정
+
+ *{margin:0; padding:0}
+ ul,ol{list-style:none}
+ img{border:0}
+
+  body{-webkit-user-select:none;
+      -webkit-touch-callout:none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      overflow-y: visible !important;} 
+
+  #headerBox,#footerBox{height:30px; text-align:center; background:#666; padding:10px 0}
+  #headerBox h1,#footerBox h1{font-family:Arial, Helvetica, sans-serif; font-size:24px; color:#FFFFFF}
+  
+  #content{padding:10px; background:#CCCCCC}
+  #content h2{font-size:18px; color:#333333; margin-bottom:10px}
+  #content p{font-family:"돋움"; font-size:12px; color:#333; line-height:1.5em;
+           text-align:justify; margin-bottom:15px}
+  #footerBox{margin-bottom:47px}
+  
+  
+  #tapbar {z-index:100; position:fixed; bottom:0; left:0; padding:0; margin:0; width:100%; 
+            background-image:-webkit-gradient(linear,0% 0%,  0% 100%, from(#464f54), to(#212425));
+            background-image:-moz-linear-gradient(0% 100% 90deg, #464f54, #212425));
+            background-color:#212425;
+            height:47px; 
+           -webkit-user-select:none;
+           -webkit-touch-callout:none;
+           -webkit-tap-highlight-color: rgba(0,0,0,0);
+           overflow-y: visible !important;
+  }
+  #tapbar ul{overflow:hidden; margin-top:5px}
+  #tapbar li{float:left; width:25%; text-align:center}
+
+==============================================
+
+
+
+
+

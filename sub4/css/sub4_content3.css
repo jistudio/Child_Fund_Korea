@@ -1,0 +1,55 @@
+/* side menu current */
+.subconL .sideBar li a.current{
+	background:url(../common/images/side_greenTubeOver.jpg) no-repeat;
+	} 
+
+
+#subconR h2 a{
+	display:block;
+	width:240px;
+	height:40px;
+	background:url(../images/content3/sub4_3content_title.jpg) no-repeat;
+	text-indent:-9999px;
+	margin-bottom:50px;
+	
+	
+	}
+#subconR .bread{
+	position:absolute;
+	top:30px;
+	right:50px;
+	
+	}
+	
+	
+#video{
+	width:670px;
+	height:377px;
+	}	
+#subconR .movieGallery{
+	margin-top:70px;
+	
+	
+	
+	
+	}
+#subconR .movieGallery li{
+	width:205px;
+	float:left;
+	margin-right:27px;
+	padding-bottom:30px;
+	
+	
+	}
+#subconR .movieGallery .movie3,
+#subconR .movieGallery .movie6,
+#subconR .movieGallery .movie9,
+#subconR .movieGallery .movie12{
+	margin-right:0;
+	
+	}
+#subconR .movieGallery p{
+	margin-top:10px;
+	
+	
+	}

@@ -1,0 +1,53 @@
+/* side menu current */
+.subconL .sideBar li a.current{background:url(../common/images/side_introduceOver.jpg) no-repeat;} 
+
+#subconR {
+	position:relative;
+	}
+#subconR h2 a{
+	display:block;
+	width:240px;
+	height:40px;
+	background:url(../images/content2/sub1_2content_title.jpg) no-repeat;
+	text-indent:-9999px;
+	
+	
+	}
+#subconR .bread2{
+	position:absolute;
+	top:30px;
+	right:50px;
+	
+	}
+
+#subconR .description{
+	margin-top:20px;
+	}
+	
+
+	
+#subconR .companyIdea{
+	
+	margin:100px 0 50px 0;
+	
+	
+	}
+#subconR .companyIdea li{
+	
+	margin:50px 0px;
+	
+	}
+#subconR .companyIdea p, #subconR .ending{
+	
+	color:#666;
+	line-height:1.75em;
+	margin-top:10px;
+	
+	}
+#subconR .sign{
+	float:left;
+	margin-top:50px;
+	width:162px;
+	height:92px;
+	
+	}

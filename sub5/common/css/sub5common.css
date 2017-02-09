@@ -1,0 +1,47 @@
+/* CSS Document */
+
+
+.subconL h3{
+	text-indent:-9999px;
+	width:210px;
+	height:105px;
+	background:url(../images/side_news.jpg) no-repeat;
+	}
+.subconL .sideBar li a{
+	display:block;
+	text-indent:-9999px;
+	width:210px;
+	height:51px;
+}
+.subconL .sideBar .sideAnnounce{
+	background:url(../images/side_announce.jpg)no-repeat;
+	
+	}
+.subconL .sideBar .sideShareNews{
+	background:url(../images/side_shareNews.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideMovie{
+	background:url(../images/side_movie.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideMagazine{
+	background:url(../images/side_magazine.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideAnnounce:hover{
+	background:url(../images/side_announceOver.jpg)no-repeat;
+	
+	}
+.subconL .sideBar .sideShareNews:hover{
+	background:url(../images/side_shareNewsOver.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideMovie:hover{
+	background:url(../images/side_movieOver.jpg) no-repeat;
+	
+	}
+.subconL .sideBar .sideMagazine:hover{
+	background:url(../images/side_magazineOver.jpg) no-repeat;
+	
+	}

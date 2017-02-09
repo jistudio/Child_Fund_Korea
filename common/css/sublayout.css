@@ -1,0 +1,64 @@
+/* CSS Document */
+
+
+
+.subContainer {
+	width:100%;
+	background:url(../images/subGreenbar.jpg) repeat-x top #f1f1f1;
+	padding-top:5px;
+}
+.subVisual {
+	width:1000px;
+	margin:0 auto 20px auto;
+}
+.subcontentWrap {
+	width:1000px;
+	margin:0 auto;
+	background:#f1f1f1;
+	padding-bottom:50px;
+}
+.subcontentWrap .subconL {
+	width:210px;
+	background:#f1f1f1;
+	float:left;
+}
+.subcontentWrap .subconL .sideBar {
+	padding-bottom:170px;
+	background:#fff;
+}
+.subcontentWrap .subconL .sideAd1 {
+	margin-top:20px;
+}
+.subcontentWrap .subconL .sideAd2 {
+	margin-top:1px;
+}
+.subcontentWrap .subconL .quickLink {
+	width:210px;
+	height:60px;
+	margin-top:20px;
+}
+.subcontentWrap .subconL .quickLink li {
+	float:left;
+}
+#subconR {
+	width:670px;
+	background:#fff;
+	float:left;
+	margin-left:20px;
+	padding:70px 50px 200px 50px;
+	position:relative;
+}
+
+#subconR .topbtn #toTop {
+	display:block;
+	width:50px;
+	height:50px;
+	position:fixed;
+bottom:224px;
+margin-left:740px;
+	
+	
+}
+.clearFix {
+	clear:both;
+}

@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.galleryWrap{ position:relative;width:1000px; height:450px; overflow:hidden; margin:0 auto; }
+.gallery{position:relative;overflow:hidden; width:3000px;
+          height:450px;left:0; top:0;}
+.gallery ul li{ float:left; list-style:none; }
+.dock{width:100px; height:14px; position:absolute; right:30px; bottom:30px;}
+
+.dock span.mbutton{ margin-right:20px; cursor:pointer; display:block;
+           float:left; width:13px; height:14px;background:url(../images/bnt.png) no-repeat;}
+
+
+
+

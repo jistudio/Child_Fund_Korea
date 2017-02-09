@@ -1,0 +1,41 @@
+
+
+1. css 연결
+<link href="plugin/photoswipe.css" type="text/css" rel="stylesheet" />
+
+2. js 추가
+<script type="text/javascript" src="plugin/lib/klass.min.js"></script>
+<script type="text/javascript">
+			$(document).live("mobileinit", function() {	
+				$('div.gallery-page').live('pageshow', function(e) {
+					var currentPage = $(e.target), options = {}, photoSwipeInstance = $("ul.gallery a", e.target).photoSwipe(options, currentPage.attr('id'));
+					return true;
+				}).live('pagehide', function(e) {
+					var currentPage = $(e.target), photoSwipeInstance = PhotoSwipe.getInstance(currentPage.attr('id'));
+					if( typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
+						PhotoSwipe.detatch(photoSwipeInstance);
+					}
+					return true;
+				});;
+			});
+</script>
+<script type="text/javascript" src="plugin/code.photoswipe.jquery-3.0.4.min.js"></script>
+
+3.콘텐츠 추가
+<ul class="gallery">
+	<li><a href="img/1.jpg" rel="external"><img src="img/thumb-01.jpg" alt="바다여행에서의 피부관리 노하우" /></a></li>
+	<li><a href="img/2.jpg" rel="external"><img src="img/thumb-02.jpg" alt="서울 시내 봄철 꽃 나들이 10선" /></a></li>
+	<li><a href="img/3.jpg" rel="external"><img src="img/thumb-03.jpg" alt="휴식을 위한 여행" /></a></li>
+	<li><a href="img/4.jpg" rel="external"><img src="img/thumb-04.jpg" alt="여행을 떠나기 전 체크사항" /></a></li>
+	<li><a href="img/5.jpg" rel="external"><img src="img/thumb-05.jpg" alt="친환경이 대세다! 자전거로 떠나는 여행" /></a></li>
+	<li><a href="img/6.jpg" rel="external"><img src="img/thumb-06.jpg" alt="야경이 아름다운 곳에서" /></a></li>
+	<li><a href="img/7.jpg" rel="external"><img src="img/thumb-07.jpg" alt="스마트한 결혼준비 - 2탄" /></a></li>
+	<li><a href="img/8.jpg" rel="external"><img src="img/thumb-08.jpg" alt="권태기가 올 줄은..." /></a></li>
+	<li><a href="img/9.jpg" rel="external"><img src="img/thumb-09.jpg" alt="특별한 날, 완벽준비 가이드" /></a></li>
+	<li><a href="img/10.jpg" rel="external"><img src="img/thumb-10.jpg" alt="추억의 사진 복원" /></a></li>
+	<li><a href="img/11.jpg" rel="external"><img src="img/thumb-11.jpg" alt="일이냐, 사랑이냐. 그것이 문제로다." /></a></li>
+	<li><a href="img/12.jpg" rel="external"><img src="img/thumb-12.jpg" alt="흡연에 관한 서로의 진실" /></a></li>
+</ul>
+
+
+4. test 주소 => http://nhb1004.dothome.co.kr/PhotoSwipe/

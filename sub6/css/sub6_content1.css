@@ -1,0 +1,101 @@
+/* side menu current */
+.subconL .sideBar li a.current {
+	background:url(../common/images/side_volunteerOver.jpg) no-repeat;
+}
+#subconR h2 a {
+	display:block;
+	width:240px;
+	height:40px;
+	background:url(../images/content1/sub6_1content_title.jpg) no-repeat;
+	text-indent:-9999px;
+	margin-bottom:70px;
+}
+#subconR .bread {
+	position:absolute;
+	top:30px;
+	right:50px;
+}
+#subconR .Vandi1, #subconR .Vandi2, #subconR .Vandi3{
+	width:670px;
+	
+	}
+
+#subconR .campus{
+	
+	background:url(../images/content1/vandi2.jpg) no-repeat top right;
+	width:670px;
+	height:212px;
+	border-bottom:none;
+	padding:0;
+	margin-bottom:30px;
+	
+	}
+#subconR .overseeWork{
+	
+	background:url(../images/content1/vandi1.jpg) no-repeat top right;
+	width:670px;
+	height:212px;
+	border-bottom:none;
+	padding:0;
+	margin-bottom:30px;
+	
+	}
+#subconR .myTown{
+	
+	background:url(../images/content1/vandi3.jpg) no-repeat top right;
+	width:670px;
+	height:212px;
+	border-bottom:none;
+	padding:0;
+	margin-bottom:30px;
+	
+	}
+
+#subconR h3 a{
+	font-size:24px;
+	color:#333;
+	width:300px;
+	margin-top:5px;
+	display:block;
+	
+	}
+#subconR .workCategory{
+	font-size:16px;
+	color:#4bb940;
+	padding:0;
+
+	
+	}
+#subconR p{
+	width:305px;
+	margin-top:20px;
+	line-height:1.75em;
+	}
+#subconR li{
+	border-bottom:#f1f1f1 solid 1px;
+	padding:10px 20px;
+
+	}
+
+#subconR .whatPeople{
+
+	border-top:2px solid #666;
+	
+	}
+#subconR .howToCollect{
+
+	border-bottom:2px solid #ccc;
+	
+	}
+#subconR span{
+	
+	font-weight:bold;
+	color:#333;
+	padding-right:50px;
+	
+
+	}
+#subconR .Vandi2, #subconR .Vandi3{
+	margin-top:70px;
+	
+	}

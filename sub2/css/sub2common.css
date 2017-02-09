@@ -1,0 +1,269 @@
+/* CSS Document */
+#intro li,  #second li,  #third li, #fifth li, #intro p,  #second p,  #third p, #fifth p{
+	
+	font-size:15px;
+	font-weight:bold;
+	line-height:1.75em;
+	}
+
+
+#intro .hidden2{
+	width:488px;
+	height:279px;
+	background:url(../images/cam1_titleImg.png) no-repeat;
+	text-indent:-9999px;
+	}
+
+ .float-left{
+	float: left;
+	
+	
+	
+}
+
+ .float-right{
+	float: right;
+	
+}
+
+
+ #navBtn{
+	list-style: none;
+	position: fixed;
+	right: 30px;
+	top:50%;
+}
+
+ #navBtn li{
+	margin: 0 0 15px 0;	
+}
+
+
+#intro{
+	background:url(../images/firstBG.jpg) 50% 0 no-repeat fixed;
+	color: black;
+
+	height: 1000px;
+	margin: 0 auto;
+	
+
+	color:#0072bc;
+	
+	
+}
+ #intro ul{
+	margin:40px 0 20px 0;
+}
+.bottomBtn{
+	width:400px;
+	margin:50px auto;
+	
+	}
+#intro .donationBTN a{
+	display:inline-block;
+	width:170px;
+	height:60px;
+	text-indent:-9999px;
+	background:url(../images/cam1_btn.jpg) no-repeat;
+
+	
+	}
+ #intro .donationBTN2 a{
+	display:inline-block;
+	width:170px;
+	height:60px;
+	text-indent:-9999px;
+	background:url(../images/cam1_btn2.jpg) no-repeat;
+
+	margin-left:10px;
+	
+	}
+
+
+#second{
+	background: url(../images/secondBG.jpg) 50% 0 no-repeat fixed;
+	color: black;
+	
+	height: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	
+	
+}
+
+
+
+#second .hidden2{
+	width:487px;
+	height:123px;
+	background:url(../images/cam2_titleImg.png) no-repeat;
+	text-indent:-9999px;
+	}
+
+
+#second .childPeace, #third .childAbuse{
+	
+	font-size:24px;
+	margin:50px 0 10px 0;
+	line-height:1.5em;
+	padding-right:20px;
+	
+	}
+
+#second p, #first p, #third p{
+	
+	line-height:1.75em;
+	margin-bottom:30px;
+	padding-right:20px;
+	
+	}
+#second .donationBTN a{
+	display:inline-block;
+	width:170px;
+	height:60px;
+	text-indent:-9999px;
+	background:url(../images/cam2_btn.jpg) no-repeat;
+	
+	
+	}
+#second .donationBTN2 a{
+	display:inline-block;
+	width:170px;
+	height:60px;
+	text-indent:-9999px;
+	background:url(../images/cam2_btn2.jpg) no-repeat;
+	
+	margin-left:10px;
+	
+	}
+
+#third{
+	background: url(../images/thirdBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	
+	height: 1100px;
+	padding: 0px 0 0 0;	
+
+}
+#third .hidden2{
+	width:488px;
+	height:123px;
+	background:url(../images/cam3_titleImg.png) no-repeat;
+	text-indent:-9999px;
+	margin-bottom:50px;
+	}
+#third .donationBTN a{
+	display:inline-block;
+	width:170px;
+	height:60px;
+	text-indent:-9999px;
+	background:url(../images/cam3_btn1.jpg) no-repeat;
+	
+	
+	}
+#third .donationBTN2 a{
+	display:inline-block;
+	width:170px;
+	height:60px;
+	text-indent:-9999px;
+	background:url(../images/cam3_btn2.jpg) no-repeat;
+	
+	margin-left:10px;
+	
+	}
+
+
+
+
+ .story{
+	margin: 0 auto;
+	min-width: 1100px;
+	overflow: auto;
+	width: 1100px;
+}
+
+ .story .float-left{
+	padding: 120px 0px 0 0;
+	position: relative;
+	width: 500px;
+	
+} 
+
+.story .float-right{
+	padding: 120px 0 0 0px;
+	position: relative;
+	width: 500px;	
+	
+}
+
+ #fifth{
+	background: #f2f2f2;
+	
+	height: 700px;
+	margin: 0 auto;
+
+	 overflow:hidden;
+}
+#fifth .story5{
+	margin: 0 auto;
+	
+	
+	width: 1020px;
+}
+ #fifth h3{
+	font-size:30px;
+	color:#333;
+	padding:100px 0 50px 0;
+	font-weight:bold;
+}
+
+#fifth li{
+	 width:235px;
+	 height:380px;
+	 float:left;
+	
+	background:url(../images/bg_stripe.jpg) repeat-x bottom #fff;
+	
+	margin-right:20px;
+	position:relative;
+	
+}
+
+
+#fifth li .lastCam{
+	 margin-right:0px;
+	 }
+
+#fifth h4 a{
+	display:block;
+	font-size:16px;
+	color:#4bb940;
+	font-weight:bold;
+	margin:20px 0 10px 20px;
+	
+
+}
+#fifth li p{
+
+	font-size:13px;
+	color:#666;
+	font-weight:normal;
+	line-height:1.5em;
+	margin:0px 20px 20px 20px;
+	
+}
+#fifth span a{
+	display:block;
+	position:absolute;
+	text-indent:-9999px;
+	background:url(../images/campaign_more.jpg) no-repeat;
+	width:13px;
+	height:14px;
+	bottom:143px;
+	right:20px;
+	
+	}
+
+
+	

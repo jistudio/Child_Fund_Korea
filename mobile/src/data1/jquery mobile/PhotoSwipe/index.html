@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>PhotoSwipe</title>
+		<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+		<style type="text/css">
+			.gallery {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.gallery:after {
+				clear: both;
+				content: ".";
+				display: block;
+				height: 0;
+				visibility: hidden;
+			}
+			.gallery li {
+				float: left;
+				width: 33.33333333%;
+			}
+			.gallery li a {
+				display: block;
+				margin: 5px;
+				border: 1px solid #3c3c3c;
+			}
+			.gallery li img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+			#Gallery1 .ui-content, #Gallery2 .ui-content {
+				overflow: hidden;
+			}
+		</style>
+		<link href="plugin/photoswipe.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="plugin/lib/klass.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).live("mobileinit", function() {	
+				$('div.gallery-page').live('pageshow', function(e) {
+					var currentPage = $(e.target), options = {}, photoSwipeInstance = $("ul.gallery a", e.target).photoSwipe(options, currentPage.attr('id'));
+					return true;
+				}).live('pagehide', function(e) {
+					var currentPage = $(e.target), photoSwipeInstance = PhotoSwipe.getInstance(currentPage.attr('id'));
+					if( typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
+						PhotoSwipe.detatch(photoSwipeInstance);
+					}
+					return true;
+				});;
+			});
+		</script>
+		<script type="text/javascript" src="plugin/code.photoswipe.jquery-3.0.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" class="gallery-page">
+			<div data-role="header" data-position="fixed">
+				<h1>커플의 모든 것</h1>
+			</div>
+			<div data-role="content">
+				
+			</div>
+                                    <div data-role="footer">
+                                        <h1>FOOTER</h1>
+                                    </div>
+		</div>
+	</body>
+</html>

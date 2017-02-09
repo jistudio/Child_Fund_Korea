@@ -1,0 +1,131 @@
+/* side menu current */
+.subconL .sideBar li a.current {
+	background:url(../common/images/side_donationOnceOver.jpg) no-repeat;
+}
+#subconR h2 a {
+	display:block;
+	width:240px;
+	height:40px;
+	background:url(../images/content3/sub3_3content_title.jpg) no-repeat;
+	text-indent:-9999px;
+}
+#subconR .bread {
+	position:absolute;
+	top:30px;
+	right:50px;
+}
+
+
+
+/* 폼  */
+
+*:focus {
+
+
+}
+
+#form1 {
+	width:670px;
+}
+#form1 .howToDonate{
+	border-bottom:#CCC 1px solid;
+	}
+#form1 h3 {
+	text-align:left;
+	
+	color:#333;
+	font-size:16px;
+	font-weight:bold;
+	margin:70px 0 20px 0;
+}
+#form1 h3 span{
+	color:#4bb940;
+	font-size:18px;
+}
+#form1 table {
+	width:670px;
+	
+	border-collapse:collapse;
+}
+
+#form1 table tbody {
+	border-top:3px solid #4bb940;
+	font-size:14px;
+
+
+	
+	
+}
+
+#form1 table th {
+	padding:15px 0px 15px 20px;
+
+	border-top:1px solid #ccc;
+	width:20%;
+	color:#333;
+	text-align:left;
+	font-weight:bold;
+	
+}
+
+#form1 table td {
+	width:80%;
+	padding:15px 20px 15px 40px;
+	border-top:1px solid #ccc;
+}
+
+#form1 input[type="password"], #form1 input[type="text"]{
+	height:24px;
+	border:0;
+	background:#e1e1e1;
+	padding:0 20px;
+	vertical-align:middle;
+
+
+	}
+
+#form1 input[type="radio"], #form1 input[type="checkbox"],   #form1 select{
+
+vertical-align:middle;
+
+
+	}
+
+#form1 .agreeArea{
+	background:#e1e1e1;
+	padding-bottom:20px;
+	height:130px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	margin-bottom:20px;
+	
+	
+	
+	}
+#form1 .agreeArea h4{
+	color:#4bb940;
+	font-weight:bold;
+	margin:20px 0;
+	
+	}
+#form1 .agreeArea p{
+	font-size:13px;
+	
+	}
+
+
+
+
+
+#form1 .btn_donate {
+	width:170px;
+	height:60px;
+	text-indent:-9999px;
+	overflow:hidden;
+	border:0;
+	vertical-align: middle;
+	background:url(../images/content2/btn_donate.jpg) no-repeat;
+	margin-top:20px;
+	cursor: pointer;
+}
+

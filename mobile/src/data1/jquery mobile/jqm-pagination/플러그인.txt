@@ -1,0 +1,18 @@
+<pagination 플러그인>
+https://github.com/filamentgroup/jqm-pagination 
+
+1.css 연결
+<link rel="stylesheet" href="jquery.mobile.pagination.css" />
+<link rel="stylesheet" href="demo.css" />
+
+2.js 플러그인 연결
+<script src="jquery.mobile.pagination.js"></script>
+
+3.콘텐츠 코드
+    <img src="_img/1.jpg" alt="Clog with flowers planted in it">
+      <ul data-role="pagination">
+	 <li class="ui-pagination-prev"><a href="4.html">Prev</a></li>
+	 <li class="ui-pagination-next"><a href="2.html">Next</a></li>
+     </ul>
+
+4. test 주소 => http://nhb1004.dothome.co.kr/jqm-pagination/

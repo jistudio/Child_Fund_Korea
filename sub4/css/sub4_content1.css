@@ -1,0 +1,117 @@
+/* side menu current */
+.subconL .sideBar li a.current {
+	background:url(../common/images/side_domesticOver.jpg) no-repeat;
+}
+#subconR h2 a {
+	display:block;
+	width:240px;
+	height:40px;
+	background:url(../images/content1/sub4_1content_title.jpg) no-repeat;
+	text-indent:-9999px;
+	margin-bottom:50px;
+}
+#subconR .bread {
+	position:absolute;
+	top:30px;
+	right:50px;
+}
+#subconR .contentHead {
+	margin:50px 0 20px 0;
+	font-size:19px;
+	color:#666;
+}
+/* accordian */
+#motionj_accrn_01 {
+	width:670px;
+}
+/* 보호 */
+#subconR .protect h3 a {
+	display:block;
+	font-size:25px;
+	color:#333;
+	font-weight:bold;
+	background:url(../images/content1/greenBar.jpg) no-repeat left bottom;
+	padding-left:30px;
+	height:20px;
+	margin-top:70px;
+	line-height:20px;
+	
+}
+#subconR .protect ul {
+	width:670px;
+	margin-top:40px;
+	overflow:hidden;
+	border-bottom:1px solid #f2f2f2;
+}
+#subconR .protect li {
+	width:205px;
+	height:165px;
+	position:relative;
+	padding-top:155px;
+	float:left;
+	margin-right:27px;
+}
+#subconR .protect .familySupport, #subconR .protect .toyLibrary {
+	clear:both;
+}
+#subconR .protect .missingChild, 
+#subconR .protect .parentClass, 
+#subconR .protect .mindTheraphy, 
+#subconR .protect .socialClass {
+	margin-right:0px;
+}
+#subconR .protect h4 a {
+	display:block;
+	font-size:16px;
+	color:#4bb940;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+#subconR .protect span a {
+	display:block;
+	position:absolute;
+	right:20px;
+	top:155px;
+	font-size:16px;
+	color:#4bb940;
+}
+#subconR .protect .abuse {
+	background:url(../images/content1/protect_abuse.jpg) no-repeat top left;
+}
+#subconR .protect .protectProgram {
+	background:url(../images/content1/protectProgram.jpg) no-repeat top left;
+}
+#subconR .protect .missingChild {
+	background:url(../images/content1/missingClass.jpg) no-repeat top left;
+}
+#subconR .protect .familySupport {
+	background:url(../images/content1/familySupport.jpg) no-repeat top left;
+}
+#subconR .protect .childTheraphy {
+	background:url(../images/content1/childTheraphy.jpg) no-repeat top left;
+}
+#subconR .protect .parentClass {
+	background:url(../images/content1/parentClass.jpg) no-repeat top left;
+}
+/*   발달  */
+
+
+
+#subconR .protect .musicClass {
+	background:url(../images/content1/musicClass.jpg) no-repeat top left;
+}
+#subconR .protect .smartKids {
+	background:url(../images/content1/smartKids.jpg) no-repeat top left;
+}
+#subconR .protect .mindTheraphy {
+	background:url(../images/content1/mindTheraphy.jpg) no-repeat top left;
+}
+#subconR .protect .toyLibrary {
+	background:url(../images/content1/toyLibrary.jpg) no-repeat top left;
+}
+#subconR .protect .library {
+	background:url(../images/content1/library.jpg) no-repeat top left;
+}
+#subconR .protect .socialClass {
+	background:url(../images/content1/socialClass.jpg) no-repeat top left;
+}
